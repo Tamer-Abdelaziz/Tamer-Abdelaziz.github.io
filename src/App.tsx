@@ -124,45 +124,7 @@ export default function App() {
       </nav>
 
       <main className="flex-grow">
-        {/* Hero Section */}
-        <section className="relative py-20 lg:py-32 overflow-hidden">
-          <div className="absolute inset-0 z-0">
-            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-primary/10 rounded-full blur-[120px]" />
-            <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-emerald-900/10 rounded-full blur-[120px]" />
-          </div>
-
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-primary/10 border border-brand-primary/20 text-brand-primary text-xs font-mono mb-6">
-                <Terminal size={14} />
-                <span>Available for Security Audits</span>
-              </div>
-              <h1 className="text-5xl lg:text-7xl font-bold text-zinc-100 mb-6 leading-[1.1]">
-                Securing the <span className="text-brand-primary">Decentralized</span> Future.
-              </h1>
-              <p className="text-xl text-zinc-400 max-w-2xl mb-10 leading-relaxed">
-                Postdoctoral Associate at <strong>New York University</strong>. 
-                Researching and building tools to make blockchain ecosystems more secure and resilient against attacks.
-              </p>
-              
-              <div className="flex flex-wrap gap-4">
-                <a href="#projects" className="px-8 py-4 bg-zinc-100 text-brand-bg font-bold rounded-xl hover:bg-zinc-200 transition-all flex items-center gap-2">
-                  View Projects <ChevronRight size={18} />
-                </a>
-                <div className="flex items-center gap-4 px-4">
-                  <a href="#" className="text-zinc-500 hover:text-zinc-100 transition-colors"><Github size={24} /></a>
-                  <a href="#" className="text-zinc-500 hover:text-zinc-100 transition-colors"><Twitter size={24} /></a>
-                  <a href="#" className="text-zinc-500 hover:text-zinc-100 transition-colors"><Linkedin size={24} /></a>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
+        
         {/* About Section */}
         <section id="about" className="py-20 bg-brand-card/30">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
