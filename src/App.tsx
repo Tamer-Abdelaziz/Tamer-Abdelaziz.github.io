@@ -322,7 +322,7 @@ export default function App() {
             </div>
             
             <div className="text-zinc-500 text-sm font-mono">
-              © {new Date().getFullYear()} ChainGuard Research. All rights reserved.
+              © {new Date().getFullYear()} Tamer Abdelaziz, PhD. All rights reserved.
             </div>
             
             <div className="flex items-center gap-6">
