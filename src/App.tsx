@@ -28,7 +28,7 @@ import { MarkdownRenderer } from './components/MarkdownRenderer';
 const ABOUT_MD = `
 # Blockchain Security Researcher
 
-I am a **Postdoctoral Associate at New York University (NYU)** in the **SANAD (Software Analytics and Developer Support) Lab**, where I conduct research on developing robust tools, methodologies, and system architectures to enhance the **security and resilience of blockchain ecosystems** against sophisticated attacks.
+I am a **Postdoctoral Associate at New York University (NYU)** in the **[SANAD](https://sanadlab.org/projects/) (Software Analytics and Developer Support) Lab**, where I conduct research on developing robust tools, methodologies, and system architectures to enhance the **security and resilience of blockchain ecosystems** against sophisticated attacks.
 
 I received my **Ph.D. in Computer Science from the National University of Singapore (NUS)**. During my doctoral studies, I also served as an **Instructor and Teaching Assistant**, teaching courses related to **software engineering and computer security**.
 
