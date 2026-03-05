@@ -8,11 +8,13 @@ interface ProjectCardProps {
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+  // Safe defaults
+  const tags = project.tags ?? [];
+
   const getStatusClasses = (status?: string) => {
     if (!status) {
       return 'px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider bg-zinc-800 text-zinc-400 rounded border border-zinc-700';
     }
-
     const s = status.toLowerCase();
     if (s.includes('released') || s.includes('research') || s.includes('published')) {
       return 'px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider bg-emerald-900 text-emerald-300 rounded border border-emerald-700';
@@ -23,8 +25,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     if (s.includes('archiv') || s.includes('deprecated') || s.includes('completed')) {
       return 'px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider bg-rose-900 text-rose-300 rounded border border-rose-700';
     }
-
-    // default neutral
     return 'px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider bg-zinc-800 text-zinc-400 rounded border border-zinc-700';
   };
 
@@ -52,21 +52,31 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         {project.description}
       </p>
 
-      <div className="flex flex-wrap gap-2 mb-4">
-        {project.tags.map(tag => (
-          <span key={tag} className="px-2 py-1 text-[10px] font-mono uppercase tracking-wider bg-zinc-800 text-zinc-400 rounded border border-zinc-700">
-            {tag}
-          </span>
-        ))}
-      </div>
+      {/* Tags: only render when non-empty */}
+      {tags.length > 0 && (
+        <div className="flex flex-wrap gap-2 mb-4">
+          {tags.map(tag => (
+            <span key={tag} className="px-2 py-1 text-[10px] font-mono uppercase tracking-wider bg-zinc-800 text-zinc-400 rounded border border-zinc-700">
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
 
       <div className="flex items-center justify-between text-[11px] text-zinc-500 font-mono">
+        {/* Date: render if present */}
         <div className="flex items-center">
-          <Calendar size={12} className="mr-1.5" />
-          <span>{project.date}</span>
+          {project.date && (
+            <>
+              <Calendar size={12} className="mr-1.5" />
+              <span>{project.date}</span>
+            </>
+          )}
+          {/* Optionally show nothing or a placeholder when date is missing */}
         </div>
 
-        {project.status && (
+        {/* Status: render only when provided */}
+        {project.status ? (
           <div
             role="status"
             aria-label={`Status: ${project.status}`}
@@ -75,7 +85,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           >
             {project.status}
           </div>
-        )}
+        ) : null}
       </div>
     </div>
   );
