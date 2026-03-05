@@ -135,7 +135,17 @@ export const AUDITS: SecurityAudit[] = [
 ];
 
 
+
+
 export const TEACHING: TeachingExperience[] = [
+  {
+    id: 't0',
+    course: 'Object-Oriented Programming Using Java (Arabic) [Link](https://www.udemy.com/course/object-oriented-programming-using-java-in-arabic/)',
+    role: 'Instructor',
+    institution: 'Udemy',
+    period: '2017',
+    description: 'Recorded and published an online course covering object-oriented programming concepts using Java, including classes, inheritance, polymorphism, and practical software development examples.'
+  },
   {
     id: 't1',
     course: 'Multiple undergraduate courses (Programming & Software Engineering)',
@@ -161,7 +171,6 @@ export const TEACHING: TeachingExperience[] = [
     description: 'Supported the Static Program Analysis course by preparing lab materials, developing practical assignments, assisting with lectures and grading, and supervising student projects focused on program analysis techniques for real-world codebases.'
   }
 ];
-
 
 export const ACADEMIC_SERVICES: AcademicService[] = [
   {
