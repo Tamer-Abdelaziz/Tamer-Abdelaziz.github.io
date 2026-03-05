@@ -140,11 +140,12 @@ export const AUDITS: SecurityAudit[] = [
 export const TEACHING: TeachingExperience[] = [
   {
     id: 't0',
-    course: 'Object-Oriented Programming Using Java (Arabic) [Link](https://www.udemy.com/course/object-oriented-programming-using-java-in-arabic/)',
+    course: 'Object-Oriented Programming Using Java',
     role: 'Instructor',
     institution: 'Udemy',
     period: '2017',
-    description: 'Recorded and published an online course covering object-oriented programming concepts using Java, including classes, inheritance, polymorphism, and practical software development examples.'
+    description: 'Recorded and published an online course covering object-oriented programming concepts using Java, including classes, inheritance, polymorphism, and practical software development examples.',
+    link: 'https://www.udemy.com/course/object-oriented-programming-using-java-in-arabic/'
   },
   {
     id: 't1',

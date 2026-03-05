@@ -35,6 +35,7 @@ export interface TeachingExperience {
   institution: string;
   period: string;
   description?: string;
+  link?: string;
 }
 
 export interface AcademicService {
