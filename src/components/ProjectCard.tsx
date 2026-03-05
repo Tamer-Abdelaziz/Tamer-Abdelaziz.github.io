@@ -8,6 +8,26 @@ interface ProjectCardProps {
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+  const getStatusClasses = (status?: string) => {
+    if (!status) {
+      return 'px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider bg-zinc-800 text-zinc-400 rounded border border-zinc-700';
+    }
+
+    const s = status.toLowerCase();
+    if (s.includes('released') || s.includes('research') || s.includes('published')) {
+      return 'px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider bg-emerald-900 text-emerald-300 rounded border border-emerald-700';
+    }
+    if (s.includes('pilot') || s.includes('prototype') || s.includes('ongoing')) {
+      return 'px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider bg-amber-900 text-amber-300 rounded border border-amber-700';
+    }
+    if (s.includes('archiv') || s.includes('deprecated') || s.includes('completed')) {
+      return 'px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider bg-rose-900 text-rose-300 rounded border border-rose-700';
+    }
+
+    // default neutral
+    return 'px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider bg-zinc-800 text-zinc-400 rounded border border-zinc-700';
+  };
+
   return (
     <div className="group relative bg-brand-card border border-brand-border rounded-xl p-6 transition-all duration-300 hover:border-brand-primary/30 hover:shadow-xl hover:shadow-brand-primary/5">
       <div className="flex justify-between items-start mb-4">
@@ -16,22 +36,22 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         </h3>
         <div className="flex gap-3">
           {project.github && (
-            <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-brand-primary transition-colors">
+            <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-brand-primary transition-colors" aria-label="GitHub">
               <Github size={18} />
             </a>
           )}
           {project.link && (
-            <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-brand-primary transition-colors">
+            <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-brand-primary transition-colors" aria-label="External link">
               <ExternalLink size={18} />
             </a>
           )}
         </div>
       </div>
-      
+
       <p className="text-zinc-400 text-sm mb-6 leading-relaxed">
         {project.description}
       </p>
-      
+
       <div className="flex flex-wrap gap-2 mb-4">
         {project.tags.map(tag => (
           <span key={tag} className="px-2 py-1 text-[10px] font-mono uppercase tracking-wider bg-zinc-800 text-zinc-400 rounded border border-zinc-700">
@@ -39,10 +59,23 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           </span>
         ))}
       </div>
-      
-      <div className="flex items-center text-[11px] text-zinc-500 font-mono">
-        <Calendar size={12} className="mr-1.5" />
-        {project.date}
+
+      <div className="flex items-center justify-between text-[11px] text-zinc-500 font-mono">
+        <div className="flex items-center">
+          <Calendar size={12} className="mr-1.5" />
+          <span>{project.date}</span>
+        </div>
+
+        {project.status && (
+          <div
+            role="status"
+            aria-label={`Status: ${project.status}`}
+            className={cn(getStatusClasses(project.status))}
+            title={project.status}
+          >
+            {project.status}
+          </div>
+        )}
       </div>
     </div>
   );

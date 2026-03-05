@@ -7,7 +7,7 @@ export const PROJECTS: Project[] = [
     description: `A hybrid synthesizer–verifier framework that combines LLM-guided constrained program synthesis, SMT-based verification, and relational equivalence checking to produce safe, gas-aware smart contract patches. The project addresses vulnerability localization, spec mining when formal specs are absent, adversarial mutational testing to avoid regressions, and scalable verification on EVM bytecode. Deliverables include an open-source repair pipeline, a corpus of verified patches, and empirical evaluations against human repairs.`,
     tags: ['smart-contracts', 'program-synthesis', 'formal-verification', 'LLM', 'SMT'],
     link: 'projects/RepairSC2026.pdf',
-    date: '2026',
+    
     status: 'Prototype — seeking collaborators'
   },
 
