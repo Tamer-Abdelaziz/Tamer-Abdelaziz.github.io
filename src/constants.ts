@@ -162,36 +162,12 @@ export const TEACHING: TeachingExperience[] = [
   }
 ];
 
-export const ACADEMIC_SERVICES00: AcademicService[] = [
-  {
-    id: 's1',
-    role: 'Program Committee Member',
-    venue: 'IEEE S&P (Oakland) Shadow PC',
-    year: 2024,
-    type: 'Program Committee'
-  },
-  {
-    id: 's2',
-    role: 'External Reviewer',
-    venue: 'USENIX Security Symposium',
-    year: 2023,
-    type: 'Reviewer'
-  },
-  {
-    id: 's3',
-    role: 'Reviewer',
-    venue: 'ACM Conference on Computer and Communications Security (CCS)',
-    year: 2023,
-    type: 'Reviewer'
-  }
-];
-
 
 export const ACADEMIC_SERVICES: AcademicService[] = [
   {
     id: 's1',
     role: 'Artifact Reviewer',
-    venue: 'PLDI 2025 Artifacts',
+    venue: 'ACM SIGPLAN PLDI(Conference on Programming Language Design and Implementation)',
     year: 2025,
     type: 'Artifact Review'
   },
