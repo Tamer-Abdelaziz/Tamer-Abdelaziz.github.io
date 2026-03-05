@@ -335,7 +335,7 @@ export default function App() {
             </div>
             
             <div className="text-zinc-500 text-sm font-mono">
-              © {new Date().getFullYear()} Tamer Abdelaziz, PhD. All rights reserved.
+              © {new Date().getFullYear()} All rights reserved.
             </div>
             
             <div className="flex items-center gap-6">
@@ -351,32 +351,7 @@ export default function App() {
                         <span className="text-sm font-medium">Google Scholar</span>
                       </a>
 
-                      {/* Twitter */}
-                      <a
-                        href="https://x.com/Tamer_Abelaziz"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-3 py-2 rounded-lg text-zinc-300 hover:text-white hover:bg-zinc-800 transition-all whitespace-nowrap"
-                        title="Twitter"
-                      >
-                        <Twitter size={20} />
-                        <span className="text-sm font-medium">Twitter</span>
-                      </a>
-
-                      {/* LinkedIn */}
-                      {/*
-                      <a
-                        href="https://linkedin.com/in/YOUR_ID"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-3 py-2 rounded-lg text-zinc-300 hover:text-white hover:bg-zinc-800 transition-all whitespace-nowrap"
-                        title="LinkedIn"
-                      >
-                        <Linkedin size={20} />
-                        <span className="text-sm font-medium">LinkedIn</span>
-                      </a>
-                      */}
-
+                     
                       {/* Email */}
                       <a
                         href="mailto:tamer.m@nyu.com"
