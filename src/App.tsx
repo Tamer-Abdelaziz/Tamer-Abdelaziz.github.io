@@ -143,54 +143,64 @@ export default function App() {
                 className="relative"
               >
                 <div className="aspect-square rounded-3xl overflow-hidden border border-brand-border bg-zinc-900 relative">
-                  <img 
-                    src="/profile.jpg" 
-                    alt="Tamer Abdelaziz" 
+                  <img
+                    src="/profile.jpg"
+                    alt="Tamer Abdelaziz"
                     className="w-full h-full object-cover opacity-80"
                     referrerPolicy="no-referrer"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-brand-bg/80 to-transparent" />
                   <div className="absolute bottom-8 left-8 right-8">
-
-                  <div className="flex items-center gap-4 p-4 bg-brand-card/80 backdrop-blur border border-brand-border rounded-xl">
-
-                    {/* Google Scholar */}
-                    <a
-                      href="https://scholar.google.com/citations?user=YOUR_ID"
-                      className="text-zinc-500 hover:text-zinc-100 hover:scale-110 transition-all"
-                      aria-label="Google Scholar"
+                    <div
+                      className="flex items-center gap-4 p-4 bg-brand-card/80 backdrop-blur border border-brand-border rounded-xl
+                                flex-nowrap overflow-x-auto"
                     >
-                      <GraduationCap size={24} />
-                    </a>
+                      {/* Google Scholar */}
+                      <a
+                        href="https://scholar.google.com/citations?user=YOUR_ID"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 px-3 py-2 rounded-lg text-zinc-300 hover:text-white hover:bg-zinc-800 transition-all whitespace-nowrap"
+                        title="Google Scholar"
+                      >
+                        <GraduationCap size={20} />
+                        <span className="text-sm font-medium">Google Scholar</span>
+                      </a>
 
-                    {/* Twitter */}
-                    <a
-                      href="https://twitter.com/YOUR_ID"
-                      className="text-zinc-500 hover:text-zinc-100 hover:scale-110 transition-all"
-                      aria-label="Twitter"
-                    >
-                      <Twitter size={24} />
-                    </a>
+                      {/* Twitter */}
+                      <a
+                        href="https://twitter.com/YOUR_ID"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 px-3 py-2 rounded-lg text-zinc-300 hover:text-white hover:bg-zinc-800 transition-all whitespace-nowrap"
+                        title="Twitter"
+                      >
+                        <Twitter size={20} />
+                        <span className="text-sm font-medium">Twitter</span>
+                      </a>
 
-                    {/* LinkedIn */}
-                    <a
-                      href="https://linkedin.com/in/YOUR_ID"
-                      className="text-zinc-500 hover:text-zinc-100 hover:scale-110 transition-all"
-                      aria-label="LinkedIn"
-                    >
-                      <Linkedin size={24} />
-                    </a>
+                      {/* LinkedIn */}
+                      <a
+                        href="https://linkedin.com/in/YOUR_ID"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 px-3 py-2 rounded-lg text-zinc-300 hover:text-white hover:bg-zinc-800 transition-all whitespace-nowrap"
+                        title="LinkedIn"
+                      >
+                        <Linkedin size={20} />
+                        <span className="text-sm font-medium">LinkedIn</span>
+                      </a>
 
-                    {/* Email */}
-                    <a
-                      href="mailto:your@email.com"
-                      className="text-zinc-500 hover:text-zinc-100 hover:scale-110 transition-all"
-                      aria-label="Email"
-                    >
-                      <Mail size={24} />
-                    </a>
-
-                  </div>
+                      {/* Email */}
+                      <a
+                        href="mailto:your@email.com"
+                        className="flex items-center gap-2 px-3 py-2 rounded-lg text-zinc-300 hover:text-white hover:bg-zinc-800 transition-all whitespace-nowrap"
+                        title="Email"
+                      >
+                        <Mail size={20} />
+                        <span className="text-sm font-medium">Email</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </motion.div>
