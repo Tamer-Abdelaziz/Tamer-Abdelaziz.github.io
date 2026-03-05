@@ -162,7 +162,7 @@ export const TEACHING: TeachingExperience[] = [
   }
 ];
 
-export const ACADEMIC_SERVICES: AcademicService[] = [
+export const ACADEMIC_SERVICES00: AcademicService[] = [
   {
     id: 's1',
     role: 'Program Committee Member',
@@ -182,6 +182,24 @@ export const ACADEMIC_SERVICES: AcademicService[] = [
     role: 'Reviewer',
     venue: 'ACM Conference on Computer and Communications Security (CCS)',
     year: 2023,
+    type: 'Reviewer'
+  }
+];
+
+
+export const ACADEMIC_SERVICES: AcademicService[] = [
+  {
+    id: 's1',
+    role: 'Artifact Reviewer',
+    venue: 'PLDI 2025 Artifacts',
+    year: 2025,
+    type: 'Artifact Review'
+  },
+  {
+    id: 's2',
+    role: 'Paper Reviewer',
+    venue: 'ACM TOSEM (Transactions on Software Engineering and Methodology)',
+    year: 2025,
     type: 'Reviewer'
   }
 ];

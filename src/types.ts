@@ -42,5 +42,5 @@ export interface AcademicService {
   role: string;
   venue: string;
   year: string | number;
-  type: 'Program Committee' | 'Reviewer' | 'Organization' | 'Other';
+  type: 'Program Committee' | 'Reviewer' | 'Artifact Review' | 'Organization' | 'Other';
 }
