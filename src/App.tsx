@@ -151,21 +151,15 @@ export default function App() {
                   <div className="absolute inset-0 bg-gradient-to-t from-brand-bg/80 to-transparent" />
                   <div className="absolute bottom-8 left-8 right-8">
                     <div className="p-4 bg-brand-card/80 backdrop-blur border border-brand-border rounded-xl">
-                      <div className="flex items-center gap-3 mb-2">
-                        <div className="w-2 h-2 rounded-full bg-brand-primary animate-pulse" />
-                        <span className="text-xs font-mono text-zinc-400 uppercase tracking-widest">Live Status</span>
-                      </div>
-                      <p className="text-sm font-medium text-zinc-100">Currently building a blockkchain anomaly detection and prevention pipeline</p>
+                      <a href="#" className="text-zinc-500 hover:text-zinc-100 transition-colors"><Github size={24} /></a>
+                      <a href="#" className="text-zinc-500 hover:text-zinc-100 transition-colors"><Twitter size={24} /></a>
+                      <a href="#" className="text-zinc-500 hover:text-zinc-100 transition-colors"><Linkedin size={24} /></a>
                     </div>
                   </div>
                 </div>
               </motion.div>
             </div>
-            <div className="flex items-center gap-4 px-4">
-                  <a href="#" className="text-zinc-500 hover:text-zinc-100 transition-colors"><Github size={24} /></a>
-                  <a href="#" className="text-zinc-500 hover:text-zinc-100 transition-colors"><Twitter size={24} /></a>
-                  <a href="#" className="text-zinc-500 hover:text-zinc-100 transition-colors"><Linkedin size={24} /></a>
-            </div>
+            
           </div>
         </section>
 
