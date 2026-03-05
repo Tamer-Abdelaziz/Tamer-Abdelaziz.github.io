@@ -40,8 +40,8 @@ export default function App() {
 
   const navItems = [
     { name: 'About', href: '#about' },
-    { name: 'Projects', href: '#projects' },
     { name: 'Publications', href: '#publications' },
+    { name: 'Projects', href: '#projects' },
     { name: 'Teaching', href: '#teaching' },
     { name: 'Service', href: '#service' },
     { name: 'Audits', href: '#audits' },
@@ -211,6 +211,25 @@ export default function App() {
           </div>
         </section>
 
+        {/* Publications Section */}
+        <section id="publications" className="py-24 bg-brand-card/30">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="mb-12">
+              <div className="flex items-center gap-2 text-brand-primary font-mono text-sm mb-2">
+                <BookOpen size={16} />
+                <span>Academic Contributions</span>
+              </div>
+              <h2 className="text-3xl lg:text-4xl font-bold">Selected Publications</h2>
+            </div>
+            
+            <div className="bg-brand-card border border-brand-border rounded-2xl px-8">
+              {PUBLICATIONS.map((pub) => (
+                <PublicationItem key={pub.id} publication={pub} />
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Projects Section */}
         <section id="projects" className="py-24">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -230,25 +249,6 @@ export default function App() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {PROJECTS.map((project) => (
                 <ProjectCard key={project.id} project={project} />
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Publications Section */}
-        <section id="publications" className="py-24 bg-brand-card/30">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="mb-12">
-              <div className="flex items-center gap-2 text-brand-primary font-mono text-sm mb-2">
-                <BookOpen size={16} />
-                <span>Academic Contributions</span>
-              </div>
-              <h2 className="text-3xl lg:text-4xl font-bold">Selected Publications</h2>
-            </div>
-            
-            <div className="bg-brand-card border border-brand-border rounded-2xl px-8">
-              {PUBLICATIONS.map((pub) => (
-                <PublicationItem key={pub.id} publication={pub} />
               ))}
             </div>
           </div>
