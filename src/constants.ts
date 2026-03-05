@@ -4,25 +4,25 @@ export const PROJECTS: Project[] = [
   {
     id: '1',
     title: 'Provable Smart-Contract Repair',
-    description: 'SMT-guided synthesis for gas-aware, semantics-preserving smart-contract patches; verified-patch corpus and empirical evaluation versus human repairs.',
+    description: 'Automated synthesis + SMT-based verification to produce gas-aware, semantically-preserving smart-contract patches. Includes a repair pipeline, verified-patch corpus, and evaluation vs. human repairs.',
     link: 'projects/RepairSC2026.pdf',
-    status: 'Prototype; collaborators sought'
+    status: 'Prototype — seeking collaborators'
   },
 
   {
     id: '2',
-    title: 'Real-time Mempool Exploit Detection',
-    description: 'Streaming two-stage detector (sketch filters + temporal GNN/Transformer) for multi-transaction exploit detection at mempool scale; emphasizes adversarial robustness and low-latency operation.',
+    title: 'Real-Time Mempool Exploit Detection',
+    description: 'Two-stage streaming detector (sketch filters + temporal GNN/transformer) for multi-transaction exploits at mempool scale, prioritizing adversarial robustness and low-latency deployment.',
     link: 'projects/RealTimeTX2026.pdf',
-    status: 'Pilot; undergoing adversarial evaluation'
+    status: 'Pilot — red-team evaluation ongoing'
   },
 
   {
     id: '3',
-    title: 'Adversarially-Robust Detection for Blockchain ML',
-    description: 'Framework combining certified-robust embeddings with adversarially-regularized temporal GNNs; includes model checkpoints, an adversarial benchmark, and deployment tooling.',
+    title: 'Adversarial-Robust Detection for Blockchain ML',
+    description: 'Unified framework combining certified-robust embeddings and adversarially-regularized temporal GNNs, with model checkpoints, an adversarial benchmark, and deployment tooling.',
     link: 'projects/AdversarialML2026.pdf',
-    status: 'Research; models and benchmark released'
+    status: 'Research — models & benchmark released'
   },
 
   {
