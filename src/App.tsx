@@ -15,6 +15,8 @@ import {
   GraduationCap,
   Award
 } from 'lucide-react';
+import { SiGooglescholar, SiOrcid, SiDblp } from "react-icons/si";
+
 import { PROJECTS, PUBLICATIONS, AUDITS, TEACHING, ACADEMIC_SERVICES } from './constants';
 import { ProjectCard } from './components/ProjectCard';
 import { PublicationItem } from './components/PublicationItem';
@@ -150,10 +152,56 @@ export default function App() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-brand-bg/80 to-transparent" />
                   <div className="absolute bottom-8 left-8 right-8">
-                    <div className="p-4 bg-brand-card/80 backdrop-blur border border-brand-border rounded-xl">
-                      <a href="#" className="text-zinc-500 hover:text-zinc-100 transition-colors"><Github size={24} /></a>
-                      <a href="#" className="text-zinc-500 hover:text-zinc-100 transition-colors"><Twitter size={24} /></a>
-                      <a href="#" className="text-zinc-500 hover:text-zinc-100 transition-colors"><Linkedin size={24} /></a>
+                    <div className="flex items-center justify-center gap-5 p-4 bg-brand-card/80 backdrop-blur border border-brand-border rounded-xl">
+
+                      <a
+                        href="https://github.com/yourusername"
+                        className="text-zinc-500 hover:text-zinc-100 hover:scale-110 transition-all"
+                        aria-label="GitHub"
+                      >
+                        <Github size={24} />
+                      </a>
+
+                      <a
+                        href="https://scholar.google.com/citations?user=YOUR_ID"
+                        className="text-zinc-500 hover:text-zinc-100 hover:scale-110 transition-all"
+                        aria-label="Google Scholar"
+                      >
+                        <SiGooglescholar size={24} />
+                      </a>
+
+                      <a
+                        href="https://orcid.org/YOUR_ORCID"
+                        className="text-zinc-500 hover:text-zinc-100 hover:scale-110 transition-all"
+                        aria-label="ORCID"
+                      >
+                        <SiOrcid size={24} />
+                      </a>
+
+                      <a
+                        href="https://dblp.org/pid/YOUR_DBLP"
+                        className="text-zinc-500 hover:text-zinc-100 hover:scale-110 transition-all"
+                        aria-label="DBLP"
+                      >
+                        <SiDblp size={24} />
+                      </a>
+
+                      <a
+                        href="https://linkedin.com/in/YOUR_PROFILE"
+                        className="text-zinc-500 hover:text-zinc-100 hover:scale-110 transition-all"
+                        aria-label="LinkedIn"
+                      >
+                        <Linkedin size={24} />
+                      </a>
+
+                      <a
+                        href="mailto:your@email.com"
+                        className="text-zinc-500 hover:text-zinc-100 hover:scale-110 transition-all"
+                        aria-label="Email"
+                      >
+                        <Mail size={24} />
+                      </a>
+
                     </div>
                   </div>
                 </div>
