@@ -3,29 +3,28 @@ import { Project, Publication, SecurityAudit, TeachingExperience, AcademicServic
 export const PROJECTS: Project[] = [
   {
     id: '1',
-    title: 'Automated Smart Contract Repair with Formal Guarantees',
-    description: `A hybrid synthesizer–verifier framework that combines LLM-guided constrained program synthesis, SMT-based verification, and relational equivalence checking to produce safe, gas-aware smart contract patches. The project addresses vulnerability localization, spec mining when formal specs are absent, adversarial mutational testing to avoid regressions, and scalable verification on EVM bytecode. Deliverables include an open-source repair pipeline, a corpus of verified patches, and empirical evaluations against human repairs.`,
+    title: 'Provable Smart-Contract Repair',
+    description: 'Automated synthesis + SMT-based verification to produce gas-aware, semantically-preserving smart-contract patches. Includes a repair pipeline, verified-patch corpus, and evaluation vs. human repairs.',
     link: 'projects/RepairSC2026.pdf',
     status: 'Prototype — seeking collaborators'
   },
 
   {
     id: '2',
-    title: 'Real-Time Transaction-Level Exploit Detection at Blockchain Scale',
-    description: `A two-stage streaming detection system combining lightweight sketch-based filtering with on-demand temporal-graph neural network and transformer reasoning to surface multi-transaction exploits (flash-loan, sandwich, oracle-manipulation) at mempool scale. Focus areas include adversarial training, cost-sensitive thresholding, and low-latency deployment patterns for relayers and exchange integrations. Outputs include detection components, red-team evaluation datasets, and mitigation policy blueprints.`,
+    title: 'Real-Time Mempool Exploit Detection',
+    description: 'Two-stage streaming detector (sketch filters + temporal GNN/transformer) for multi-transaction exploits at mempool scale, prioritizing adversarial robustness and low-latency deployment.',
     link: 'projects/RealTimeTX2026.pdf',
     status: 'Pilot — red-team evaluation ongoing'
   },
 
   {
     id: '3',
-    title: 'AdvRobDet — Adversarial Robustness for Blockchain ML',
-    description: `A unified adversarial-robustness framework for ML-based detection of malicious contracts and transaction sequences. Combines certified-robust embedding layers (e.g., randomized smoothing over opcode substitutions) with adversarially-regularized temporal GNNs and cross-stream attention fusion. The project produces robust model checkpoints, an adversarial benchmark suite, and deployment-ready tools for on-chain and off-chain evaluation of robustness vs. inference-cost trade-offs.`,
+    title: 'Adversarial-Robust Detection for Blockchain ML',
+    description: 'Unified framework combining certified-robust embeddings and adversarially-regularized temporal GNNs, with model checkpoints, an adversarial benchmark, and deployment tooling.',
     link: 'projects/AdversarialML2026.pdf',
     status: 'Research — models & benchmark released'
   }
 ];
-
 
 
 export const PUBLICATIONS: Publication[] = [
