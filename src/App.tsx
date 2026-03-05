@@ -74,7 +74,7 @@ export default function App() {
                 </a>
               ))}
               <a
-                href="mailto:contact@example.com"
+                href="mailto:tamer.m@nyu.edu"
                 className="px-4 py-2 bg-brand-primary text-brand-bg text-sm font-bold rounded-lg hover:bg-brand-primary/90 transition-colors"
               >
                 Get in Touch
@@ -112,7 +112,7 @@ export default function App() {
                   </a>
                 ))}
                 <a
-                  href="mailto:contact@example.com"
+                  href="mailto:tamer.m@nyu.edu"
                   className="block w-full text-center px-4 py-3 bg-brand-primary text-brand-bg font-bold rounded-lg"
                 >
                   Get in Touch
@@ -339,9 +339,53 @@ export default function App() {
             </div>
             
             <div className="flex items-center gap-6">
-              <a href="#" className="text-zinc-500 hover:text-brand-primary transition-colors"><Github size={20} /></a>
-              <a href="#" className="text-zinc-500 hover:text-brand-primary transition-colors"><Twitter size={20} /></a>
-              <a href="#" className="text-zinc-500 hover:text-brand-primary transition-colors"><Linkedin size={20} /></a>
+              {/* Google Scholar */}
+                      <a
+                        href="https://scholar.google.com/citations?user=BqqwRlgAAAAJ&hl=en&oi=ao"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 px-3 py-2 rounded-lg text-zinc-300 hover:text-white hover:bg-zinc-800 transition-all whitespace-nowrap"
+                        title="Google Scholar"
+                      >
+                        <GraduationCap size={20} />
+                        <span className="text-sm font-medium">Google Scholar</span>
+                      </a>
+
+                      {/* Twitter */}
+                      <a
+                        href="https://x.com/Tamer_Abelaziz"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 px-3 py-2 rounded-lg text-zinc-300 hover:text-white hover:bg-zinc-800 transition-all whitespace-nowrap"
+                        title="Twitter"
+                      >
+                        <Twitter size={20} />
+                        <span className="text-sm font-medium">Twitter</span>
+                      </a>
+
+                      {/* LinkedIn */}
+                      {/*
+                      <a
+                        href="https://linkedin.com/in/YOUR_ID"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 px-3 py-2 rounded-lg text-zinc-300 hover:text-white hover:bg-zinc-800 transition-all whitespace-nowrap"
+                        title="LinkedIn"
+                      >
+                        <Linkedin size={20} />
+                        <span className="text-sm font-medium">LinkedIn</span>
+                      </a>
+                      */}
+
+                      {/* Email */}
+                      <a
+                        href="mailto:tamer.m@nyu.com"
+                        className="flex items-center gap-2 px-3 py-2 rounded-lg text-zinc-300 hover:text-white hover:bg-zinc-800 transition-all whitespace-nowrap"
+                        title="Email"
+                      >
+                        <Mail size={20} />
+                        <span className="text-sm font-medium">Email</span>
+                      </a>
             </div>
           </div>
         </div>
