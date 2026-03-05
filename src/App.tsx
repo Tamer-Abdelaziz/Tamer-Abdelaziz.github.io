@@ -157,7 +157,7 @@ export default function App() {
                     >
                       {/* Google Scholar */}
                       <a
-                        href="https://scholar.google.com/citations?user=YOUR_ID"
+                        href="https://scholar.google.com/citations?user=BqqwRlgAAAAJ&hl=en&oi=ao"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 px-3 py-2 rounded-lg text-zinc-300 hover:text-white hover:bg-zinc-800 transition-all whitespace-nowrap"
@@ -169,7 +169,7 @@ export default function App() {
 
                       {/* Twitter */}
                       <a
-                        href="https://twitter.com/YOUR_ID"
+                        href="https://x.com/Tamer_Abelaziz"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 px-3 py-2 rounded-lg text-zinc-300 hover:text-white hover:bg-zinc-800 transition-all whitespace-nowrap"
@@ -180,6 +180,7 @@ export default function App() {
                       </a>
 
                       {/* LinkedIn */}
+                      {/*
                       <a
                         href="https://linkedin.com/in/YOUR_ID"
                         target="_blank"
@@ -190,10 +191,11 @@ export default function App() {
                         <Linkedin size={20} />
                         <span className="text-sm font-medium">LinkedIn</span>
                       </a>
+                      */}
 
                       {/* Email */}
                       <a
-                        href="mailto:your@email.com"
+                        href="mailto:tamer.m@nyu.com"
                         className="flex items-center gap-2 px-3 py-2 rounded-lg text-zinc-300 hover:text-white hover:bg-zinc-800 transition-all whitespace-nowrap"
                         title="Email"
                       >
