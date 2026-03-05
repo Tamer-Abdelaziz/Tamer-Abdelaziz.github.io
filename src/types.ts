@@ -6,6 +6,7 @@ export interface Project {
   link?: string;
   github?: string;
   date: string;
+  status: string;
 }
 
 export interface Publication {
