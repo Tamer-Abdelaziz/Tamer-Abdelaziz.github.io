@@ -23,16 +23,21 @@ import { TeachingItem } from './components/TeachingItem';
 import { ServiceItem } from './components/ServiceItem';
 import { MarkdownRenderer } from './components/MarkdownRenderer';
 
+
 const ABOUT_MD = `
 # Blockchain Security Researcher
-I am a **Postdoctoral Associate at New York University (NYU)**, where my research focuses on building robust tools and architectures to make blockchain ecosystems more secure and resilient against sophisticated attacks.
 
-Specializing in **EVM security**, **smart contract auditing**, and **formal verification**, I bridge the gap between academic research and production-ready security solutions.
+I am a **Postdoctoral Associate at New York University (NYU)** in the **SANAD (Software Analytics and Developer Support) Lab**, where I conduct research on developing robust tools, methodologies, and system architectures to enhance the **security and resilience of blockchain ecosystems** against sophisticated attacks.
 
-Currently focused on:
-- Cross-chain bridge security architectures
-- MEV extraction and its impact on protocol stability
-- Automated vulnerability detection in Solidity
+I received my **Ph.D. in Computer Science from the National University of Singapore (NUS)**. During my doctoral studies, I also served as an **Instructor and Teaching Assistant**, teaching courses related to **software engineering and computer security**.
+
+My research focuses on **Ethereum Virtual Machine (EVM) security**, **smart contract auditing and automated vulnerability repair**, **blockchain attack detection and prevention**, and **formal verification techniques for decentralized systems**. My work aims to bridge the gap between **academic research and practical security solutions**, enabling the development of safer and more reliable decentralized applications and blockchain infrastructures.
+
+## Current Research Interests
+- **Anomaly detection and prevention** for malicious blockchain transactions  
+- **Security architectures for cross-chain bridges** and interoperability protocols  
+- **Maximal Extractable Value (MEV)** and its impact on protocol stability and fairness  
+- **Automated vulnerability detection and repair** for smart contracts
 `;
 
 export default function App() {
