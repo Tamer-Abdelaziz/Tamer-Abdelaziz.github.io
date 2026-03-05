@@ -32,12 +32,6 @@ I am a **Postdoctoral Associate at New York University (NYU)** in the **SANAD (S
 I received my **Ph.D. in Computer Science from the National University of Singapore (NUS)**. During my doctoral studies, I also served as an **Instructor and Teaching Assistant**, teaching courses related to **software engineering and computer security**.
 
 My research focuses on **Ethereum Virtual Machine (EVM) security**, **smart contract auditing and automated vulnerability repair**, **blockchain attack detection and prevention**, and **formal verification techniques for decentralized systems**. My work aims to bridge the gap between **academic research and practical security solutions**, enabling the development of safer and more reliable decentralized applications and blockchain infrastructures.
-
-## Current Research Interests
-- **Anomaly detection and prevention** for malicious blockchain transactions  
-- **Security architectures for cross-chain bridges** and interoperability protocols  
-- **Maximal Extractable Value (MEV)** and its impact on protocol stability and fairness  
-- **Automated vulnerability detection and repair** for smart contracts
 `;
 
 export default function App() {
@@ -161,7 +155,7 @@ export default function App() {
                         <div className="w-2 h-2 rounded-full bg-brand-primary animate-pulse" />
                         <span className="text-xs font-mono text-zinc-400 uppercase tracking-widest">Live Status</span>
                       </div>
-                      <p className="text-sm font-medium text-zinc-100">Currently auditing a Tier-1 L2 Bridge Protocol</p>
+                      <p className="text-sm font-medium text-zinc-100">Currently building a blockkchain anomaly detection and prevention pipeline</p>
                     </div>
                   </div>
                 </div>
