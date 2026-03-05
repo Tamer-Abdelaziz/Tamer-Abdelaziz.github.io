@@ -312,10 +312,12 @@ export default function App() {
             <div className="mt-12 p-8 border border-brand-primary/20 bg-brand-primary/5 rounded-2xl text-center">
               <h3 className="text-xl font-bold text-zinc-100 mb-2">Need a Security Review?</h3>
               <p className="text-zinc-400 mb-6 max-w-xl mx-auto">
-                I am currently accepting new audit requests for Q3 2024. 
-                Specializing in DeFi, Bridges, and Governance modules.
+                Now accepting smart contract audit and monitoring requests.
+
+                Independent security analysis using research-driven tools.
+                Specializing in DeFi protocols, cross-chain bridges, and governance modules.
               </p>
-              <a href="mailto:contact@example.com" className="inline-flex items-center gap-2 px-6 py-3 bg-brand-primary text-brand-bg font-bold rounded-xl hover:bg-brand-primary/90 transition-all">
+              <a href="mailto:tamer.m@nyu.edu" className="inline-flex items-center gap-2 px-6 py-3 bg-brand-primary text-brand-bg font-bold rounded-xl hover:bg-brand-primary/90 transition-all">
                 Request an Audit <Mail size={18} />
               </a>
             </div>
