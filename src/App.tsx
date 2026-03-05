@@ -220,7 +220,7 @@ export default function App() {
                   <Code2 size={16} />
                   <span>Tools & Research</span>
                 </div>
-                <h2 className="text-3xl lg:text-4xl font-bold">Open Source Projects</h2>
+                <h2 className="text-3xl lg:text-4xl font-bold">Open Research Projects</h2>
               </div>
               <p className="text-zinc-400 max-w-md">
                 Building tools to automate security analysis and improve the developer experience in Web3.
