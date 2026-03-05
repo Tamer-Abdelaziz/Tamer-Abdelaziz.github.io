@@ -161,6 +161,11 @@ export default function App() {
                 </div>
               </motion.div>
             </div>
+            <div className="flex items-center gap-4 px-4">
+                  <a href="#" className="text-zinc-500 hover:text-zinc-100 transition-colors"><Github size={24} /></a>
+                  <a href="#" className="text-zinc-500 hover:text-zinc-100 transition-colors"><Twitter size={24} /></a>
+                  <a href="#" className="text-zinc-500 hover:text-zinc-100 transition-colors"><Linkedin size={24} /></a>
+            </div>
           </div>
         </section>
 
