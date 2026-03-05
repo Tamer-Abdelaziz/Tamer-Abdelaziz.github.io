@@ -134,21 +134,31 @@ export const AUDITS: SecurityAudit[] = [
   }
 ];
 
+
 export const TEACHING: TeachingExperience[] = [
   {
     id: 't1',
-    course: 'CS-GY 9223: Blockchain and Cryptocurrencies',
-    role: 'Guest Lecturer',
-    institution: 'NYU Tandon School of Engineering',
-    period: 'Spring 2024',
-    description: 'Lectured on smart contract security patterns and common EVM vulnerabilities.'
+    course: 'Multiple undergraduate courses (Programming & Software Engineering)',
+    role: 'Teaching Assistant',
+    institution: 'Helwan University',
+    period: 'Apr 2014 – Jul 2018',
+    description: 'Supported delivery of a broad undergraduate curriculum including C, C++, Java, Python; object-oriented programming, design patterns, data structures, compilers, software engineering, and automated testing. Responsibilities included running labs, grading, tutoring, and supervising student projects.'
   },
   {
     id: 't2',
-    course: 'Introduction to Cybersecurity',
+    course: 'Compiler Design; Programming Languages; Formal Verification; Blockchain Security',
     role: 'Teaching Assistant',
-    institution: 'New York University',
-    period: 'Fall 2023'
+    institution: 'National University of Singapore (NUS)',
+    period: '2019 – 2023',
+    description: 'TA for graduate and undergraduate courses covering compiler construction, PL principles, and formal verification (Coq, theorem provers, K Framework), as well as blockchain security. Activities included lecturing recitations, designing assignments and exams, mentoring project teams, and holding office hours.'
+  },
+  {
+    id: 't3',
+    course: 'CS-UH 3260: Static Program Analysis',
+    role: 'Teaching Assistant',
+    institution: 'New York University Abu Dhabi (NYUAD)',
+    period: 'Spring 2025; Spring 2026',
+    description: 'Supported the Static Program Analysis course by preparing lab materials, developing practical assignments, assisting with lectures and grading, and supervising student projects focused on program analysis techniques for real-world codebases.'
   }
 ];
 
