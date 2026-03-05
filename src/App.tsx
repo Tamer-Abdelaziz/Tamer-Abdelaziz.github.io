@@ -160,6 +160,46 @@ export default function App() {
           </div>
         </section>
 
+        {/* About Section */}
+        <section id="about" className="py-20 bg-brand-card/30">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+              >
+                <MarkdownRenderer content={ABOUT_MD} />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                className="relative"
+              >
+                <div className="aspect-square rounded-3xl overflow-hidden border border-brand-border bg-zinc-900 relative">
+                  <img 
+                    src="/profile.jpg" 
+                    alt="Tamer Abdelaziz" 
+                    className="w-full h-full object-cover opacity-80"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-bg/80 to-transparent" />
+                  <div className="absolute bottom-8 left-8 right-8">
+                    <div className="p-4 bg-brand-card/80 backdrop-blur border border-brand-border rounded-xl">
+                      <div className="flex items-center gap-3 mb-2">
+                        <div className="w-2 h-2 rounded-full bg-brand-primary animate-pulse" />
+                        <span className="text-xs font-mono text-zinc-400 uppercase tracking-widest">Live Status</span>
+                      </div>
+                      <p className="text-sm font-medium text-zinc-100">Currently auditing a Tier-1 L2 Bridge Protocol</p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
         {/* Projects Section */}
         <section id="projects" className="py-24">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
