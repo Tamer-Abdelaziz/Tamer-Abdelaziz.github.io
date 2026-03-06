@@ -135,10 +135,8 @@ export const AUDITS: SecurityAudit[] = [
 ];
 
 
-
-
-export const TEACHING: TeachingExperience[] = [
-  {
+const x = [
+    {
     id: 't0',
     course: 'Object-Oriented Programming Using Java',
     role: 'Instructor',
@@ -147,6 +145,10 @@ export const TEACHING: TeachingExperience[] = [
     description: 'Recorded and published an online course covering object-oriented programming concepts using Java, including classes, inheritance, polymorphism, and practical software development examples.',
     link: 'https://www.udemy.com/course/object-oriented-programming-using-java-in-arabic/'
   },
+]
+
+
+export const TEACHING: TeachingExperience[] = [
   {
     id: 't1',
     course: 'Multiple undergraduate courses (Programming & Software Engineering)',
