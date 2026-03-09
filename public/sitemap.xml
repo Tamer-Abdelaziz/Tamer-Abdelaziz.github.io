@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main website -->
+  <url>
+    <loc>https://tamer-abdelaziz.github.io/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Thesis -->
+  <url>
+    <loc>https://tamer-abdelaziz.github.io/papers/Tamer_Abdelaziz___Thesis.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Research Projects -->
+  <url>
+    <loc>https://tamer-abdelaziz.github.io/projects/RepairSC2026.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://tamer-abdelaziz.github.io/projects/RealTimeTX2026.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://tamer-abdelaziz.github.io/projects/AdversarialML2026.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://tamer-abdelaziz.github.io/projects/StressTesting2026.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://tamer-abdelaziz.github.io/projects/FM2026.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://tamer-abdelaziz.github.io/projects/CrossChain2026.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
