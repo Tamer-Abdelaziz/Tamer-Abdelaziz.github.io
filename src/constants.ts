@@ -54,9 +54,18 @@ export const PROJECTS: Project[] = [
 export const PUBLICATIONS: Publication[] = [
   {
     id: 'p1',
+    title: 'TxLens: Scalable Real-Time Detection of Malicious Ethereum Transactions',
+    authors: ['Tamer Abdelaziz', 'Karim Ali'],
+    venue: 'The 8th edition of the IEEE International Conference on Blockchain and Cryptocurrency (ICBC 2026)',
+    year: 2026,
+    link: 'https://icbc2026.ieee-icbc.org/',
+    pdf: 'papers/TamerICBC2026.pdf'
+  },
+  {
+    id: 'p1',
     title: 'Where Do Smart Contract Security Analyzers Fall Short?',
     authors: ['Tamer Abdelaziz', 'Salma Alsaghir', 'Karim Ali'],
-    venue: '23rd International Mining Software Repositories Conference (MSR 2026)',
+    venue: 'The 23rd International Mining Software Repositories Conference (MSR 2026)',
     year: 2026,
     link: 'https://2026.msrconf.org/details/msr-2026-technical-papers/5/Where-Do-Smart-Contract-Security-Analyzers-Fall-Short-',
     pdf: 'papers/TamerMSR2026.pdf'
@@ -83,7 +92,7 @@ export const PUBLICATIONS: Publication[] = [
     id: 'p4',
     title: 'Smart Learning to Find Dumb Contracts',
     authors: ['Tamer Abdelaziz', 'Aquinas Hobor'],
-    venue: '32nd USENIX Security Symposium (USENIX Security 2023)',
+    venue: 'The 32nd USENIX Security Symposium (USENIX Security 2023)',
     year: 2023,
     link: 'https://www.usenix.org/conference/usenixsecurity23/presentation/abdelaziz',
     pdf: 'papers/DLVA_Paper_Ref_3.pdf'
@@ -101,7 +110,7 @@ export const PUBLICATIONS: Publication[] = [
     id: 'p6',
     title: 'Schooling to Exploit Foolish Contracts',
     authors: ['Tamer Abdelaziz', 'Aquinas Hobor'],
-    venue: '2023 Fifth International Conference on Blockchain Computing and Applications (BCCA)',
+    venue: 'The 5th International Conference on Blockchain Computing and Applications (BCCA 2023)',
     year: 2023,
     link: 'https://ieeexplore.ieee.org/document/10338924',
     pdf: 'https://doi.org/10.48550/arXiv.2304.10737'
