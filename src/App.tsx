@@ -57,7 +57,7 @@ export default function App() {
                 <Shield size={20} />
               </div>
               <span className="text-zinc-100 font-mono font-bold tracking-tighter text-xl">
-                Tamer Abdelaziz<span className="text-brand-primary">, PhD.</span>
+                Tamer Abdelaziz<span className="text-brand-primary">, Ph.D.</span>
               </span>
             </div>
 
