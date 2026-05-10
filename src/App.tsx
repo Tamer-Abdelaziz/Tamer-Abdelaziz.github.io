@@ -334,7 +334,7 @@ export default function App() {
             <div className="flex items-center gap-2">
               <Shield className="text-brand-primary" size={24} />
               <span className="text-zinc-100 font-mono font-bold tracking-tighter text-lg">
-                Tamer Abdelaziz<span className="text-brand-primary">, PhD.</span>
+                Tamer Abdelaziz<span className="text-brand-primary">, Ph.D.</span>
               </span>
             </div>
             
