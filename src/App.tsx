@@ -26,9 +26,8 @@ import { MarkdownRenderer } from './components/MarkdownRenderer';
 
 
 const ABOUT_MD = `
-# Blockchain Security Researcher
 
-I am a **Postdoctoral Associate at New York University (NYU)** in the **[SANAD](https://sanadlab.org/projects/) (Software Analytics and Developer Support) Lab**, where I conduct research on developing robust tools, methodologies, and system architectures to enhance the **security and resilience of blockchain ecosystems** against sophisticated attacks.
+I am a **Postdoctoral Associate at New York University (NYU)** in the SANAD (Software Analytics and Developer Support) Lab, where I conduct research on developing robust tools, methodologies, and system architectures to enhance the **security and resilience of blockchain ecosystems** against sophisticated attacks.
 
 I received my **Ph.D. in Computer Science from the National University of Singapore (NUS)**. During my doctoral studies, I also served as an **Instructor and Teaching Assistant**, teaching courses related to **software engineering and computer security**.
 
@@ -44,7 +43,7 @@ export default function App() {
     { name: 'Projects', href: '#projects' },
     { name: 'Teaching', href: '#teaching' },
     { name: 'Service', href: '#service' },
-    { name: 'Audits', href: '#audits' },
+    {/* { name: 'Audits', href: '#audits' }, */}
   ];
 
   return (
@@ -168,6 +167,7 @@ export default function App() {
                       </a>
 
                       {/* Twitter */}
+                      {/*
                       <a
                         href="https://x.com/Tamer_Abelaziz"
                         target="_blank"
@@ -178,11 +178,11 @@ export default function App() {
                         <Twitter size={20} />
                         <span className="text-sm font-medium">Twitter</span>
                       </a>
+                      */}
 
                       {/* LinkedIn */}
-                      {/*
                       <a
-                        href="https://linkedin.com/in/YOUR_ID"
+                        href="https://linkedin.com/in/tamer-abdelaziz-050b6364"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 px-3 py-2 rounded-lg text-zinc-300 hover:text-white hover:bg-zinc-800 transition-all whitespace-nowrap"
@@ -191,7 +191,7 @@ export default function App() {
                         <Linkedin size={20} />
                         <span className="text-sm font-medium">LinkedIn</span>
                       </a>
-                      */}
+                      
 
                       {/* Email */}
                       <a
@@ -293,6 +293,7 @@ export default function App() {
         </section>
 
         {/* Audits Section */}
+        {/*
         <section id="audits" className="py-24">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mb-12">
@@ -323,6 +324,7 @@ export default function App() {
             </div>
           </div>
         </section>
+        */}
       </main>
 
       {/* Footer */}
