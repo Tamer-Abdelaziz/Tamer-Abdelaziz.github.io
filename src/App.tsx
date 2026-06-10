@@ -182,7 +182,7 @@ export default function App() {
 
                       {/* LinkedIn */}
                       <a
-                        href="https://linkedin.com/in/tamer-abdelaziz-050b6364"
+                        href="https://linkedin.com/in/dr-tamer-abdelaziz"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 px-3 py-2 rounded-lg text-zinc-300 hover:text-white hover:bg-zinc-800 transition-all whitespace-nowrap"
