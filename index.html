@@ -1,13 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tamer Abdelaziz, Ph.D.</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta content="Academic portfolio of Tamer Abdelaziz, Postdoctoral Associate at New York University Abu Dhabi, working on blockchain and smart contract security, runtime exploit detection and prevention, and program analysis." name="description" />
+<title>Tamer Abdelaziz | Postdoctoral Associate, NYU Abu Dhabi</title>
+<link rel="canonical" href="https://tamer-abdelaziz.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Tamer Abdelaziz | Postdoctoral Associate, NYU Abu Dhabi">
+<meta property="og:description" content="Screening contracts before they ship, judging transactions on the live network, and blocking attacks at the moment they execute.">
+<meta property="og:url" content="https://tamer-abdelaziz.github.io/">
+<meta property="og:image" content="https://tamer-abdelaziz.github.io/assets/img/profile.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link href="https://fonts.googleapis.com" rel="preconnect" />
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+<link href="assets/css/style.css?v=202608300059" rel="stylesheet" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23a2461f'/><text x='50' y='69' font-size='50' font-family='Georgia,serif' fill='white' text-anchor='middle'>TA</text></svg>">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Tamer Abdelaziz","honorificSuffix":"Ph.D.",
+"jobTitle":"Postdoctoral Associate","email":"mailto:tamer.m@nyu.edu","url":"https://tamer-abdelaziz.github.io/",
+"affiliation":{"@type":"Organization","name":"New York University Abu Dhabi"},
+"alumniOf":[{"@type":"Organization","name":"National University of Singapore"},{"@type":"Organization","name":"Helwan University"}],
+"knowsAbout":["Blockchain security","Smart contract security","Program analysis","Machine learning for security"],
+"sameAs":["https://scholar.google.com/citations?user=BqqwRlgAAAAJ","https://linkedin.com/in/dr-tamer-abdelaziz"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="nav">
+  <div class="nav-in">
+    <a class="nav-name" href="#top">Tamer Abdelaziz</a>
+    <div class="nav-links">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects" data-opt>Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#students" data-opt>Students</a>
+      <a href="#contact">Contact</a>
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch colour theme">
+        <i class="fas fa-circle-half-stroke" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- ================= hero ================= -->
+  <header class="hero" id="top">
+    <div class="wrap hero-in">
+      <div>
+        <h1 id="heroName">Tamer Abdelaziz</h1>
+        <div class="hero-ident" id="heroIdent"></div>
+        <p class="hero-tagline" id="heroTagline"></p>
+        <div class="hero-links" id="heroLinks"></div>
+        <div class="hero-loc" id="heroLoc"></div>
+      </div>
+      <img class="hero-photo" id="heroPhoto" alt="Tamer Abdelaziz" src="assets/img/profile.jpg" width="210" height="210" />
+    </div>
+  </header>
+
+  <!-- ================= research arc ================= -->
+  <section class="sec" id="research">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-kicker">Research Program</div>
+        <h2>One problem, followed end to end</h2>
+        <p class="sec-sub">Six stages, each one a published or in-review result. They run in the order I worked on them, and the later ones exist because the earlier ones turned out not to be enough.</p>
+      </div>
+      <div class="arc" id="arcRow"></div>
+    </div>
+  </section>
+
+  <!-- ================= vision ================= -->
+  <section class="sec" id="vision">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-kicker">Research Statement</div>
+        <h2>Core vision</h2>
+      </div>
+      <p class="vision" id="rsVision"></p>
+      <h3>Key principles</h3>
+      <ul class="principles" id="rsPrinciples"></ul>
+    </div>
+  </section>
+
+  <!-- ================= themes ================= -->
+  <section class="sec" id="themes">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-kicker">Themes</div>
+        <h2>What I work on</h2>
+      </div>
+      <div class="grid-3" id="themeCards"></div>
+    </div>
+  </section>
+
+  <!-- ================= publications ================= -->
+  <section class="sec" id="publications">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-kicker">Publications</div>
+        <h2>Selected work</h2>
+      </div>
+      <div class="filters" id="pubFilters" role="group" aria-label="Filter publications"></div>
+      <div class="pubs" id="pubList"></div>
+    </div>
+  </section>
+
+  <!-- ================= projects ================= -->
+  <section class="sec" id="projects">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-kicker">In Progress</div>
+        <h2>Ongoing research projects</h2>
+      </div>
+      <div class="grid-2" id="projectCards"></div>
+    </div>
+  </section>
+
+  <!-- ================= experience ================= -->
+  <section class="sec" id="experience">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-kicker">Background</div>
+        <h2>Appointments and education</h2>
+      </div>
+      <h3>Academic appointments</h3>
+      <div class="tl" id="expList"></div>
+      <h3 style="margin-top:38px">Education</h3>
+      <div class="tl" id="eduList"></div>
+      <div class="grid-2" style="margin-top:38px">
+        <div>
+          <h3>Honours and awards</h3>
+          <ul class="plain awards" id="awardList"></ul>
+        </div>
+        <div>
+          <h3>Service and memberships</h3>
+          <ul class="plain" id="serviceList"></ul>
+        </div>
+      </div>
+      <h3 style="margin-top:38px">Teaching</h3>
+      <div class="tl" id="teachList"></div>
+    </div>
+  </section>
+
+  <!-- ================= students ================= -->
+  <section class="sec" id="students">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-kicker">Opportunities</div>
+        <h2>Prospective students and collaborators</h2>
+      </div>
+      <div class="contact-grid">
+        <div>
+          <p style="margin-top:0" id="oppIntro"></p>
+          <h3 style="margin-top:22px">Current directions</h3>
+          <ul class="plain" id="oppDirections"></ul>
+        </div>
+        <div class="cta">
+          <h3>Who tends to do well</h3>
+          <p id="oppFit" style="color:var(--muted);font-size:.93rem"></p>
+          <a class="btn" id="oppBtn" href="#contact"><i class="fas fa-paper-plane" aria-hidden="true"></i> Get in touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= contact ================= -->
+  <section class="sec" id="contact">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-kicker">Contact</div>
+        <h2>Get in touch</h2>
+      </div>
+      <div class="contact-grid">
+        <div id="contactBlurb"></div>
+        <div id="contactRows"></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;width:100%">
+    <span id="footName"></span>
+    <span id="footUpdated"></span>
+  </div>
+</footer>
+
+<script src="assets/data/site.js?v=202608300059"></script>
+<script src="assets/js/main.js?v=202608300059"></script>
+</body>
 </html>
