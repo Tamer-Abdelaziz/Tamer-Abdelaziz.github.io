@@ -14,7 +14,7 @@ const SITE = {
     affiliation: "New York University Abu Dhabi",
     doctorate: "Ph.D., National University of Singapore",
     location: "Abu Dhabi, United Arab Emirates",
-    tagline: "I work on blockchain security: screening contracts before they ship, judging transactions on the live network, and blocking attacks at the moment they execute.",
+    tagline: "I work on blockchain security: screening smart contracts before they ship, judging transactions on the live network, and blocking attacks at the moment they execute.",
     // Drop a square photo at assets/img/profile.jpg. Until then a monogram shows.
     photo: "assets/img/profile.jpg",
     bio: [
@@ -341,7 +341,7 @@ const SITE = {
   contact: {
     email: "tamer.m@nyu.edu",
     emailSubject: "Research inquiry",
-    office: "SANAD Lab, Computer Science, New York University Abu Dhabi",
+    office: "A1-182B, SANAD Lab, Computer Science, New York University Abu Dhabi",
     city: "Saadiyat Island, Abu Dhabi, United Arab Emirates",
     blurb: "Student inquiries, collaborations, and protocols you would like a second pair of eyes on are all welcome. I read everything that arrives."
   }
