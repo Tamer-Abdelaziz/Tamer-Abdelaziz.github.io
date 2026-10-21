@@ -31,6 +31,7 @@ const SITE = {
 
   /* ---------------------------------------------------------------- */
   news: [
+    { date: "Oct 2026",    html: "<strong>Salma Alsaghir</strong>, a Ph.D. student I supervise at NYU Abu Dhabi, co-authored our <strong>MSR 2026</strong> paper and has a second manuscript under review." },
     { date: "Oct 2026",    html: "Joined the program committees of <strong>MSR 2027</strong> (Technical Papers, Junior PC) and <strong>IEEE ICBC 2027</strong>." },
     { date: "Sep 2026",    html: "Two manuscripts under review: <strong>TxSentinel</strong>, a protocol-agnostic exploit detector, and the <strong>Security Authorization Framework</strong>, which turns detection into on-chain prevention." },
     { date: "Aug 2026",        html: "Serving as an internal reviewer for <strong>ICSE 2027</strong>." },
@@ -296,7 +297,7 @@ const SITE = {
       points: [
         "Research on the security of blockchain ecosystems, with Prof. Karim Ali.",
         "Built TxLens (IEEE ICBC 2026) and TxSentinel; introduced Security Authorization and the SAF framework.",
-        "Supervise three undergraduate research assistants; secondary advisor on three to four capstone and graduation projects each year."
+        "Supervise a Ph.D. student and three undergraduate research assistants; secondary advisor on three to four capstone and graduation projects each year."
       ] },
     { role: "Research Scholar", org: "School of Computing, National University of Singapore", where: "Singapore", when: "2019 – 2023",
       points: ["Thesis work on detecting vulnerabilities in deployed smart contracts, advised by Prof. Aquinas Hobor and Prof. Siau-Cheng Khoo. The core results appeared at USENIX Security 2023."] },
@@ -316,6 +317,8 @@ const SITE = {
 
   /* ---------------------------------------------------------------- */
   teaching: [
+    { course: "Research supervision \u2014 Salma Alsaghir, Ph.D. student", org: "NYU Abu Dhabi", when: "2025 \u2013 Present", role: "Supervisor",
+      body: "I guide her research on the empirical evaluation of smart contract security analyzers, from study design through to writing. She co-authored \u201CWhere Do Smart Contract Security Analyzers Fall Short?\u201D at MSR 2026, and we have a second manuscript under review." },
     { course: "CS-UH 3260 — Static Program Analysis", org: "NYU Abu Dhabi", when: "Spring 2025, Spring 2026", role: "Teaching Assistant",
       body: "Lab materials and assignments; supervised course projects analyzing real-world codebases." },
     { course: "Compiler Design · Programming Languages · Formal Verification · Blockchain Security", org: "National University of Singapore", when: "2019 – 2023", role: "Teaching Assistant",
