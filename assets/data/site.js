@@ -31,6 +31,7 @@ const SITE = {
 
   /* ---------------------------------------------------------------- */
   news: [
+    { date: "Oct 2026",    html: "Joined the program committees of <strong>MSR 2027</strong> (Technical Papers, Junior PC) and <strong>IEEE ICBC 2027</strong>." },
     { date: "Sep 2026",    html: "Two manuscripts under review: <strong>TxSentinel</strong>, a protocol-agnostic exploit detector, and the <strong>Security Authorization Framework</strong>, which turns detection into on-chain prevention." },
     { date: "Aug 2026",        html: "Serving as an internal reviewer for <strong>ICSE 2027</strong>." },
     { date: "June 2026",        html: "<strong>TxLens</strong> published at <strong>IEEE ICBC 2026</strong> — <a href='https://ieeexplore.ieee.org/document/11575464/'>real-time detection of malicious Ethereum transactions</a>." },
@@ -331,6 +332,8 @@ const SITE = {
   ],
 
   service: [
+    "Program Committee Member (Junior PC), Technical Papers Track, International Conference on Mining Software Repositories (MSR 2027)",
+    "Technical Program Committee Member, IEEE International Conference on Blockchain and Cryptocurrency (ICBC 2027)",
     "Internal Reviewer, International Conference on Software Engineering (ICSE 2027)",
     "Artifact Reviewer, ACM SIGPLAN PLDI 2025",
     "Paper Reviewer, ACM Transactions on Software Engineering and Methodology (TOSEM), 2025",
