@@ -31,10 +31,11 @@ const SITE = {
 
   /* ---------------------------------------------------------------- */
   news: [
-    { date: "Nov 2026",    html: "Two new manuscripts under review at <strong>MSR 2027</strong>: <strong>TxBench</strong>, a benchmark of attack transactions and evidence-backed negatives on seven EVM chains, and <a href='https://arxiv.org/abs/2610.30829'>a ten-year study of Ethereum Stack Exchange</a>." },
+    { date: "Nov 2026",    html: "<strong>TxBench</strong>, a benchmark of attack transactions and evidence-backed negatives on seven EVM chains, is under review at <strong>MSR 2027</strong>." },
+    { date: "Oct 2026",    html: "New preprint: <a href='https://arxiv.org/abs/2610.30829'><strong>What Ethereum Developers Ask For, and Whether They Get It</strong></a> \u2014 ten years of Ethereum Stack Exchange, all 54,637 questions." },
     { date: "Oct 2026",    html: "<strong>Salma Alsaghir</strong>, a Ph.D. student I supervise at NYU Abu Dhabi, co-authored our <strong>MSR 2026</strong> paper and has a second manuscript under review." },
     { date: "Oct 2026",    html: "Joined the program committees of <strong>MSR 2027</strong> (Technical Papers, Junior PC) and <strong>IEEE ICBC 2027</strong>." },
-    { date: "Sep 2026",    html: "Two further manuscripts under review: <strong>TxSentinel</strong>, a protocol-agnostic exploit detector, and the <strong>Security Authorization Framework</strong>, which turns detection into on-chain prevention." },
+    { date: "Sep 2026",    html: "Two manuscripts under review: <strong>TxSentinel</strong>, a protocol-agnostic exploit detector, and the <strong>Security Authorization Framework</strong>, which turns detection into on-chain prevention." },
     { date: "Aug 2026",        html: "Serving as an internal reviewer for <strong>ICSE 2027</strong>." },
     { date: "June 2026",        html: "<strong>TxLens</strong> published at <strong>IEEE ICBC 2026</strong> — <a href='https://ieeexplore.ieee.org/document/11575464/'>real-time detection of malicious Ethereum transactions</a>." },
     { date: "Apr 2026",    html: "<strong>“Where Do Smart Contract Security Analyzers Fall Short?”</strong> presented at <strong>MSR 2026</strong> in Rio de Janeiro, and published in the <a href='https://dl.acm.org/doi/10.1145/3793302.3793338'>ACM Digital Library</a>." },
@@ -126,24 +127,6 @@ const SITE = {
     },
     {
       type: "review", year: 2026, selected: true,
-      title: "What Ethereum Developers Ask For, and Whether They Get It: Ten Years of Ethereum Stack Exchange",
-      authors: ["Tamer Abdelaziz"],
-      venue: "Under review, MSR 2027", venueShort: "Under review",
-      note: "Surveys and interviews record what developers say when asked. Ethereum Stack Exchange records what they ask for unprompted, and whether anyone resolves it. I label all 54,637 questions posted over a decade with a prompt-based topic pipeline. Demand concentrates on writing, deploying, and debugging contracts, with the toolchain second and growing, while security and scaling stay thin. Resolution has weakened: among answered questions, the share reaching an accepted answer fell by 16.2 to 24.5 points. Who asks separates outcomes far more than what is asked, and a shift toward newer askers accounts for much of the fall.",
-      links: [
-        { label: "arXiv",  href: "https://arxiv.org/abs/2610.30829" },
-        { label: "Replication package", href: "https://doi.org/10.5281/zenodo.23551228" }
-      ],
-      bibtex:
-`@unpublished{abdelaziz2027ese,
-  author = {Tamer Abdelaziz},
-  title  = {What {Ethereum} Developers Ask For, and Whether They Get It: Ten Years of {Ethereum} {Stack} {Exchange}},
-  year   = {2026},
-  note   = {Under review; arXiv:2610.30829}
-}`
-    },
-    {
-      type: "review", year: 2026, selected: true,
       title: "Contract-Enforced Security Authorization: Stopping DeFi Exploits Before They Execute",
       authors: ["Tamer Abdelaziz", "Karim Ali"],
       venue: "Under review", venueShort: "Under review",
@@ -204,6 +187,26 @@ const SITE = {
   title     = {TxLens: Scalable Real-Time Detection of Malicious {Ethereum} Transactions},
   booktitle = {8th IEEE International Conference on Blockchain and Cryptocurrency (ICBC)},
   year      = {2026}
+}`
+    },
+    {
+      type: "preprint", year: 2026, selected: true,
+      title: "What Ethereum Developers Ask For, and Whether They Get It: Ten Years of Ethereum Stack Exchange",
+      authors: ["Tamer Abdelaziz"],
+      venue: "Preprint, arXiv:2610.30829", venueShort: "arXiv",
+      note: "Surveys and interviews record what developers say when asked. Ethereum Stack Exchange records what they ask for unprompted, and whether anyone resolves it. I label all 54,637 questions posted over a decade with a prompt-based topic pipeline. Demand concentrates on writing, deploying, and debugging contracts, with the toolchain second and growing, while security and scaling stay thin. Resolution has weakened: among answered questions, the share reaching an accepted answer fell by 16.2 to 24.5 points. Who asks separates outcomes far more than what is asked, and a shift toward newer askers accounts for much of the fall.",
+      links: [
+        { label: "arXiv",  href: "https://arxiv.org/abs/2610.30829" },
+        { label: "Replication package", href: "https://doi.org/10.5281/zenodo.23551228" }
+      ],
+      bibtex:
+`@misc{abdelaziz2026ese,
+  author        = {Tamer Abdelaziz},
+  title         = {What {Ethereum} Developers Ask For, and Whether They Get It: Ten Years of {Ethereum} {Stack} {Exchange}},
+  year          = {2026},
+  eprint        = {2610.30829},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.SE}
 }`
     },
     {
