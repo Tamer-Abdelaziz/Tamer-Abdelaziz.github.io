@@ -31,7 +31,7 @@ const SITE = {
 
   /* ---------------------------------------------------------------- */
   news: [
-    { date: "Nov 2026",    html: "<strong>TxBench</strong>, a benchmark of attack transactions and evidence-backed negatives on seven EVM chains, is under review at <strong>MSR 2027</strong>." },
+    { date: "Nov 2026",    html: "<a href='https://arxiv.org/abs/2611.04411'><strong>TxBench</strong></a>, a benchmark that verifies public incident data to evaluate smart-contract attack detectors, is on arXiv and under review at the <strong>MSR 2027</strong> Data and Tool Showcase Track." },
     { date: "Oct 2026",    html: "New preprint: <a href='https://arxiv.org/abs/2610.30829'><strong>What Ethereum Developers Ask For, and Whether They Get It</strong></a> \u2014 ten years of Ethereum Stack Exchange, all 54,637 questions." },
     { date: "Oct 2026",    html: "<strong>Salma Alsaghir</strong>, a Ph.D. student I supervise at NYU Abu Dhabi, co-authored our <strong>MSR 2026</strong> paper and has a second manuscript under review." },
     { date: "Oct 2026",    html: "Joined the program committees of <strong>MSR 2027</strong> (Technical Papers, Junior PC) and <strong>IEEE ICBC 2027</strong>." },
@@ -113,16 +113,20 @@ const SITE = {
   publications: [
     {
       type: "review", year: 2026, selected: true,
-      title: "TxBench: A Benchmark of Attack Transactions and Evidence-Backed Negatives on Seven EVM Chains",
+      title: "TxBench: Verifying Public Incident Data to Benchmark Smart-Contract Attack Detectors",
       authors: ["Tamer Abdelaziz", "Karim Ali"],
       venue: "Under review, MSR 2027 (Data and Tool Showcase Track)", venueShort: "Under review",
-      note: "Detectors of malicious transactions are each evaluated on a dataset its own authors assembled, so results do not compare. TxBench builds a shared ground truth instead: a cited transaction counts as an attack only when its own execution takes value from others and evidence beyond the citation ties it to its incident, and negatives are drawn from each chain\u2019s own traffic near the attacks rather than from ordinary traffic. The benchmark holds 1,012 attacks from 602 incidents across seven EVM chains, worth USD 868.1 million. A blind review under rules fixed in advance confirms 98 of 100 sampled attacks and all 100 sampled negatives.",
-      links: [], bibtex:
+      note: "Most datasets for evaluating attack detectors copy the transactions that public incident databases cite and pair them with random ones. But the databases never check their citations against execution, and random transactions rarely resemble attacks. TxBench verifies both sides: a cited transaction counts as an attack only when its execution takes value from others and independent evidence ties it to its incident, and its legitimate transactions perform the same operations as attacks. Two public databases share only 10.6% of their 1,850 cited transactions, and only 1,012 are verifiable attacks, worth $868.2 million. A blind manual review confirms 98 of 100 sampled attacks and all 100 sampled legitimate transactions.",
+      links: [
+        { label: "arXiv",  href: "https://arxiv.org/abs/2611.04411" },
+        { label: "Dataset", href: "https://doi.org/10.5281/zenodo.23758032" }
+      ],
+      bibtex:
 `@unpublished{abdelaziz2027txbench,
   author = {Tamer Abdelaziz and Karim Ali},
-  title  = {TxBench: A Benchmark of Attack Transactions and Evidence-Backed Negatives on Seven {EVM} Chains},
+  title  = {{TxBench}: Verifying Public Incident Data to Benchmark Smart-Contract Attack Detectors},
   year   = {2026},
-  note   = {Under review}
+  note   = {Under review; arXiv:2611.04411}
 }`
     },
     {
