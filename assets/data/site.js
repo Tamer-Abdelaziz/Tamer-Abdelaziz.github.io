@@ -14,7 +14,7 @@ const SITE = {
     affiliation: "New York University Abu Dhabi",
     doctorate: "Ph.D., National University of Singapore",
     location: "Abu Dhabi, United Arab Emirates",
-    tagline: "I work on blockchain security: screening smart contracts before they ship, judging transactions on the live network, and blocking attacks at the moment they execute.",
+    tagline: "I work on blockchain security. I screen smart contracts before they ship, judge transactions on the live network, and block attacks at the moment they execute.",
     // Drop a square photo at assets/img/profile.jpg. Until then a monogram shows.
     photo: "assets/img/profile.jpg",
     bio: [
@@ -32,29 +32,29 @@ const SITE = {
   /* ---------------------------------------------------------------- */
   news: [
     { date: "Nov 2026",    html: "<a href='https://arxiv.org/abs/2611.04411'><strong>TxBench</strong></a>, a benchmark that verifies public incident data to evaluate smart-contract attack detectors, is on arXiv and under review at the <strong>MSR 2027</strong> Data and Tool Showcase Track." },
-    { date: "Oct 2026",    html: "New preprint: <a href='https://arxiv.org/abs/2610.30829'><strong>What Ethereum Developers Ask For, and Whether They Get It</strong></a> \u2014 ten years of Ethereum Stack Exchange, all 54,637 questions." },
+    { date: "Oct 2026",    html: "New preprint: <a href='https://arxiv.org/abs/2610.30829'><strong>What Ethereum Developers Ask For, and Whether They Get It</strong></a>. The study covers ten years of Ethereum Stack Exchange, all 54,637 questions." },
     { date: "Oct 2026",    html: "<strong>Salma Alsaghir</strong>, a Ph.D. student I supervise at NYU Abu Dhabi, co-authored our <strong>MSR 2026</strong> paper and has a second manuscript under review." },
     { date: "Oct 2026",    html: "Joined the program committees of <strong>MSR 2027</strong> (Technical Papers, Junior PC) and <strong>IEEE ICBC 2027</strong>." },
     { date: "Sep 2026",    html: "Two manuscripts under review: <strong>TxSentinel</strong>, a protocol-agnostic exploit detector, and the <strong>Security Authorization Framework</strong>, which turns detection into on-chain prevention." },
     { date: "Aug 2026",        html: "Serving as an internal reviewer for <strong>ICSE 2027</strong>." },
-    { date: "June 2026",        html: "<strong>TxLens</strong> published at <strong>IEEE ICBC 2026</strong> — <a href='https://ieeexplore.ieee.org/document/11575464/'>real-time detection of malicious Ethereum transactions</a>." },
+    { date: "June 2026",        html: "<strong>TxLens</strong> published at <strong>IEEE ICBC 2026</strong>. The paper presents <a href='https://ieeexplore.ieee.org/document/11575464/'>real-time detection of malicious Ethereum transactions</a>." },
     { date: "Apr 2026",    html: "<strong>“Where Do Smart Contract Security Analyzers Fall Short?”</strong> presented at <strong>MSR 2026</strong> in Rio de Janeiro, and published in the <a href='https://dl.acm.org/doi/10.1145/3793302.3793338'>ACM Digital Library</a>." },
     { date: "Spring 2026", html: "Teaching assistant for <strong>CS-UH 3260 Static Program Analysis</strong> at NYU Abu Dhabi (also Spring 2025)." },
     { date: "Nov 2025",        html: "Artifact Reviewer for <strong>ACM SIGPLAN PLDI 2025</strong>; paper reviewer for <strong>ACM TOSEM</strong>." },
-    { date: "Oct 2025",        html: "Presented <em>Proactive Defense: Real-Time Detection of Malicious Ethereum Transactions</em> at NYUAD Research Institute Day." }
+    { date: "Oct 2025",        html: "Presented the poster <em>Proactive Defense: Real-Time Detection of Malicious Ethereum Transactions</em> at NYUAD Research Institute Day." }
   ],
 
   /* ---------------------------------------------------------------- */
 
   researchStatement: {
-  vision: "Blockchains hold software-controlled assets at a scale where a single malicious transaction can drain a protocol, with no authority able to reverse it. Detection alone is not enough: it can raise the alarm only after an attack is already underway, and private relays or faster execution can leave no time to respond. My research moves the security decision earlier. Before a sensitive call executes, the transaction should be analyzed and explicitly authorized, making security a requirement for execution rather than a race to stop an attack. The same authorization point can also enforce rules for tokenized real-world assets, including custody, transfer restrictions, and investor eligibility, directly at the time of transfer.",
+  vision: "Blockchains hold software-controlled assets at a scale where a single malicious transaction can drain a protocol. No authority can reverse such a transaction. Detection alone is not enough. A detector can raise the alarm only after an attack is already underway, and private relays or faster execution can leave no time to respond. My research moves the security decision earlier. Before a sensitive call executes, an analyzer should inspect the transaction and explicitly authorize it. Security then becomes a requirement for execution rather than a race to stop an attack. The same authorization point can also enforce rules for tokenized real-world assets at the time of transfer. These rules include custody, transfer restrictions, and investor eligibility.",
 
   principles: [
   { h: "Prevention over Detection", b: "Instead of reporting an attack after it begins, I build systems that decide whether a transaction should execute at all." },
-  { h: "Learning at Chain Scale", b: "Precise analysis is often too expensive for the scale of public blockchains, so I use machine learning to reproduce security judgments where traditional analysis cannot keep up." },
-  { h: "Protocol-Agnostic Defense", b: "A defense should not depend on contract history, known attack classes, or hand-built protocol models to protect newly deployed and previously unseen systems." },
+  { h: "Learning at Chain Scale", b: "Precise analysis is often too expensive for the scale of public blockchains. Therefore, I use machine learning to reproduce security judgments where traditional analysis cannot keep up." },
+  { h: "Protocol-Agnostic Defense", b: "To protect newly deployed and previously unseen systems, a defense should not depend on contract history, known attack classes, or hand-built protocol models." },
   { h: "Security and Regulation at One Gate", b: "The same authorization mechanism that blocks malicious transactions can enforce custody, transfer, and eligibility rules for tokenized real-world assets." },
-  { h: "Evaluation on Unseen Incidents", b: "Security results are meaningful only when models are tested on genuinely unseen incidents, so I build carefully curated benchmarks that remain disjoint from training and model selection." }
+  { h: "Evaluation on Unseen Incidents", b: "Security results are meaningful only when evaluation uses genuinely unseen incidents. Therefore, I build carefully curated benchmarks that remain disjoint from training and model selection." }
   ]
   },
 
@@ -73,15 +73,15 @@ const SITE = {
     { title: "Runtime security for programmable finance",
       body: "A general layer that decides what a transaction is about to do and enforces that decision before irreversible state changes occur." },
     { title: "Machine learning on execution semantics",
-      body: "Representations built from execution traces, bytecode, and control flow, so models generalize on program behavior instead of surface statistics." },
+      body: "Representations built from execution traces, bytecode, and control flow, letting models generalize on program behavior instead of surface statistics." },
     { title: "Cryptographic enforcement",
       body: "Authorization protocols that certify a safety verdict about the call itself, deployable with the cryptography Ethereum already runs." },
     { title: "Adversarial robustness",
-      body: "The moment a model decides whether a transaction runs, fooling it becomes worth an attacker's time. Robustness stops being a number in a table and turns into a deployment requirement." },
+      body: "The moment a model decides whether a transaction runs, fooling it becomes worth an attacker's time. Robustness then stops being a number in a table and turns into a deployment requirement." },
     { title: "Automated repair with guarantees",
-      body: "Reporting a flaw leaves the actual work to someone else, and an unchecked patch is only a second guess. What interests me is what a repair should have to prove about itself before anyone deploys it." },
+      body: "Reporting a flaw leaves the repair work to someone else. An unchecked patch is only a second guess. I am interested in what a repair should have to prove about itself before anyone deploys it." },
     { title: "Compliance by construction",
-      body: "Regulators usually learn about a violation only once it has settled. Written so a machine can read them, the same rules could be checked while the transaction is still deciding whether to run." }
+      body: "Regulators usually learn about a violation only after it has settled. If the rules are written in machine-readable form, a system may check them while the transaction is still deciding whether to run." }
   ],
 
   /* ---------------------------------------------------------------- */
@@ -92,20 +92,20 @@ const SITE = {
       "Automated repair of vulnerable contracts, with the patch verified rather than assumed.",
       "Adversarial robustness for models that gate execution, and machine-checkable regulatory compliance."
     ],
-    fit: "Students who do well on these projects tend to be comfortable reading code that was not written for them, careful about evaluation, and willing to reproduce an attack before trying to stop it. Experience with program analysis, deep learning, or Solidity helps, but I have supervised people who arrived with none of the three.",
+    fit: "Students who do well on these projects tend to be comfortable reading code that was not written for them, careful about evaluation, and willing to reproduce an attack before trying to stop it. Experience with program analysis, deep learning, or Solidity helps. However, I have supervised people who arrived with none of the three.",
     cta: "Discuss research"
   },
 
   /* ---------------------------------------------------------------- */
   projects: [
     { name: "Provable Smart-Contract Repair", status: "Prototype", tags: ["Repair", "Formal methods"],
-      body: "Patches synthesized automatically and then checked with an SMT solver, so a fix is known to keep the contract's intended behavior and not to blow up its gas cost. Evaluated against what human developers actually wrote." },
+      body: "The prototype synthesizes patches automatically and checks each one with an SMT solver. The check confirms that a fix keeps the contract's intended behavior and does not blow up its gas cost. The evaluation compares the patches against what human developers wrote." },
     { name: "Adversarially Robust Detection for Blockchain ML", status: "In progress", tags: ["Robustness", "Machine learning"],
       body: "Certified-robust embeddings paired with adversarially regularized temporal graph networks, evaluated against evasion rather than assumed to withstand it. The models ship with an adversarial benchmark so other groups can attack them too." },
     { name: "Cross-Chain Contagion and Risk Simulation", status: "In progress", tags: ["Simulation", "Systemic risk"],
-      body: "A temporal-graph simulator quantifying how exploits propagate across chains and the systemic risk they create, which is the measurement layer regulators and institutions currently lack." },
+      body: "A temporal-graph simulator quantifying how exploits propagate across chains and the systemic risk they create. Regulators and institutions currently lack this measurement layer." },
     { name: "RWA Tokenization: Security and Regulation Enforcement", status: "In progress", tags: ["Governance", "Compliance"],
-      body: "Custody limits, transfer restrictions, and investor eligibility encoded as policy the SAF Gateway can evaluate, so a non-compliant transfer is refused on the same path that refuses an exploit. Aimed at the virtual-asset regimes now forming across the Gulf." }
+      body: "Custody limits, transfer restrictions, and investor eligibility encoded as policy the SAF Gateway can evaluate. The Gateway then refuses a non-compliant transfer on the same path that refuses an exploit. Aimed at the virtual-asset regimes now forming across the Gulf." }
   ],
 
   /* ---------------------------------------------------------------- */
@@ -116,7 +116,7 @@ const SITE = {
       title: "TxBench: Verifying Public Incident Data to Benchmark Smart-Contract Attack Detectors",
       authors: ["Tamer Abdelaziz", "Karim Ali"],
       venue: "Under review, MSR 2027 (Data and Tool Showcase Track)", venueShort: "Under review",
-      note: "Most datasets for evaluating attack detectors copy the transactions that public incident databases cite and pair them with random ones. But the databases never check their citations against execution, and random transactions rarely resemble attacks. TxBench verifies both sides: a cited transaction counts as an attack only when its execution takes value from others and independent evidence ties it to its incident, and its legitimate transactions perform the same operations as attacks. Two public databases share only 10.6% of their 1,850 cited transactions, and only 1,012 are verifiable attacks, worth $868.2 million. A blind manual review confirms 98 of 100 sampled attacks and all 100 sampled legitimate transactions.",
+      note: "Most datasets for evaluating attack detectors copy the transactions that public incident databases cite and pair them with random ones. However, the databases never check their citations against execution, and random transactions rarely resemble attacks. TxBench verifies both sides. A cited transaction counts as an attack only when its execution takes value from others and independent evidence ties it to its incident. TxBench's legitimate transactions perform the same operations as attacks. Two public databases share only 10.6% of their 1,850 cited transactions. Only 1,012 of those transactions are verifiable attacks, worth $868.2 million. A blind manual review confirms 98 of 100 sampled attacks and all 100 sampled legitimate transactions.",
       links: [
         { label: "arXiv",  href: "https://arxiv.org/abs/2611.04411" },
         { label: "Dataset", href: "https://doi.org/10.5281/zenodo.23758032" }
@@ -134,7 +134,7 @@ const SITE = {
       title: "Contract-Enforced Security Authorization: Stopping DeFi Exploits Before They Execute",
       authors: ["Tamer Abdelaziz", "Karim Ali"],
       venue: "Under review", venueShort: "Under review",
-      note: "Introduces Security Authorization, realized as the Security Authorization Framework (SAF). Before a sensitive function will run, the caller must present proof that a trusted analyzer looked at this exact call and approved it. An off-chain Authorization Service issues that proof as a short-lived Execution Permit; an on-chain Authorization Gateway checks it. A call without one reverts, whichever route it took to the chain.",
+      note: "Introduces Security Authorization, realized as the Security Authorization Framework (SAF). Before a sensitive function will run, the caller must present proof that a trusted analyzer looked at this exact call and approved it. An off-chain Authorization Service issues that proof as a short-lived Execution Permit. An on-chain Authorization Gateway checks the permit. A call without a permit reverts, whichever route it took to the chain.",
       links: [], bibtex:
 `@unpublished{abdelaziz2026saf,
   author = {Tamer Abdelaziz and Karim Ali},
@@ -148,7 +148,7 @@ const SITE = {
       title: "TxSentinel: Protocol-Agnostic Exploit Detection on EVM Blockchains",
       authors: ["Tamer Abdelaziz", "Karim Ali"],
       venue: "Under review", venueShort: "Under review",
-      note: "Judges a transaction from the trace of that transaction alone. Nothing has to be known about the contract in advance, and no catalogue of attack types is assumed, so a contract deployed yesterday is as readable as an established one. It also transfers across EVM chains.",
+      note: "Judges a transaction from the trace of that transaction alone. TxSentinel needs no advance knowledge of the contract and assumes no catalog of attack types. Therefore, a contract deployed yesterday is as readable as an established one. TxSentinel also transfers across EVM chains.",
       links: [], bibtex:
 `@unpublished{abdelaziz2026txsentinel,
   author = {Tamer Abdelaziz and Karim Ali},
@@ -162,7 +162,7 @@ const SITE = {
       title: "Where Do Smart Contract Security Analyzers Fall Short?",
       authors: ["Tamer Abdelaziz", "Salma Alsaghir", "Karim Ali"],
       venue: "23rd International Conference on Mining Software Repositories (MSR 2026)",
-      note: "An empirical study of how the widely used analyzers behave on real incidents, and of the gap between the bugs they are built to catch and the ones attackers actually use.",
+      note: "An empirical study of how the widely used analyzers behave on real incidents, and of the gap between the bugs they are built to catch and the ones attackers use.",
       venueShort: "MSR 2026",
       links: [
         { label: "ACM DL", href: "https://dl.acm.org/doi/10.1145/3793302.3793338" },
@@ -198,7 +198,7 @@ const SITE = {
       title: "What Ethereum Developers Ask For, and Whether They Get It: Ten Years of Ethereum Stack Exchange",
       authors: ["Tamer Abdelaziz"],
       venue: "Preprint, arXiv:2610.30829", venueShort: "arXiv",
-      note: "Surveys and interviews record what developers say when asked. Ethereum Stack Exchange records what they ask for unprompted, and whether anyone resolves it. I label all 54,637 questions posted over a decade with a prompt-based topic pipeline. Demand concentrates on writing, deploying, and debugging contracts, with the toolchain second and growing, while security and scaling stay thin. Resolution has weakened: among answered questions, the share reaching an accepted answer fell by 16.2 to 24.5 points. Who asks separates outcomes far more than what is asked, and a shift toward newer askers accounts for much of the fall.",
+      note: "Surveys and interviews record what developers say when asked. Ethereum Stack Exchange records what they ask for unprompted, and whether anyone resolves it. I label all 54,637 questions posted over a decade with a prompt-based topic pipeline. Demand concentrates on writing, deploying, and debugging contracts. The toolchain ranks second and is growing, while security and scaling stay thin. Resolution has weakened. Among answered questions, the share reaching an accepted answer fell by 16.2 to 24.5 points. Who asks separates outcomes far more than what is asked. A shift toward newer askers accounts for much of the fall.",
       links: [
         { label: "arXiv",  href: "https://arxiv.org/abs/2610.30829" },
         { label: "Replication package", href: "https://doi.org/10.5281/zenodo.23551228" }
@@ -237,7 +237,7 @@ const SITE = {
       authors: ["Tamer Abdelaziz", "Aquinas Hobor"],
       venue: "32nd USENIX Security Symposium, pp. 1775–1792",
       venueShort: "USENIX Security 2023",
-      note: "Trains neural networks using rigorous program analyzers as teachers, so the models reproduce analyzer judgments directly from EVM bytecode and answer orders of magnitude faster. Datasets and benchmarks released publicly.",
+      note: "Trains neural networks using rigorous program analyzers as teachers. The models reproduce analyzer judgments directly from EVM bytecode and answer orders of magnitude faster. The paper releases its datasets and benchmarks publicly.",
       links: [
         { label: "USENIX",   href: "https://www.usenix.org/conference/usenixsecurity23/presentation/abdelaziz" },
         { label: "PDF",      href: "https://www.usenix.org/system/files/usenixsecurity23-abdelaziz.pdf" },
@@ -277,7 +277,7 @@ const SITE = {
       authors: ["Tamer Abdelaziz", "Aquinas Hobor"],
       venue: "Published with the proceedings of the 32nd USENIX Security Symposium",
       venueShort: "USENIX Artifact",
-      note: "The artifact accompanying the USENIX Security 2023 paper: submitted, evaluated, and badged by the artifact evaluation committee.",
+      note: "We submitted the artifact accompanying the USENIX Security 2023 paper, and the artifact evaluation committee evaluated and badged it.",
       links: [{ label: "Artifact appendix", href: "https://www.usenix.org/system/files/usenixsecurity23-appendix-abdelaziz.pdf" }],
       bibtex: ""
     },
@@ -287,7 +287,7 @@ const SITE = {
       authors: ["Tamer Abdelaziz", "Aquinas Hobor"],
       venue: "5th International Conference on Blockchain Computing and Applications (BCCA 2023), IEEE, pp. 388–395",
       venueShort: "BCCA 2023",
-      note: "Shifts the target from vulnerability to exploitability, since a flaw nobody can reach costs nothing and one that can be reached costs everything.",
+      note: "Shifts the target from vulnerability to exploitability. A flaw nobody can reach costs nothing, while a reachable one costs everything.",
       links: [{ label: "IEEE Xplore", href: "https://ieeexplore.ieee.org/document/10338924" }],
       bibtex:
 `@inproceedings{abdelaziz2023schooling,
@@ -357,12 +357,12 @@ const SITE = {
 
   /* ---------------------------------------------------------------- */
   teaching: [
-    { course: "Research supervision \u2014 Salma Alsaghir, Ph.D. student", org: "NYU Abu Dhabi", when: "2025 \u2013 Present", role: "Supervisor",
+    { course: "Research supervision of Salma Alsaghir, Ph.D. student", org: "NYU Abu Dhabi", when: "2025 \u2013 Present", role: "Supervisor",
       body: "I guide her research on the empirical evaluation of smart contract security analyzers, from study design through to writing. She co-authored \u201CWhere Do Smart Contract Security Analyzers Fall Short?\u201D at MSR 2026, and we have a second manuscript under review." },
-    { course: "CS-UH 3260 — Static Program Analysis", org: "NYU Abu Dhabi", when: "Spring 2025, Spring 2026", role: "Teaching Assistant",
-      body: "Lab materials and assignments; supervised course projects analyzing real-world codebases." },
+    { course: "CS-UH 3260 Static Program Analysis", org: "NYU Abu Dhabi", when: "Spring 2025, Spring 2026", role: "Teaching Assistant",
+      body: "Prepared lab materials and practical assignments, in which students work on real-world codebases." },
     { course: "Compiler Design · Programming Languages · Formal Verification · Blockchain Security", org: "National University of Singapore", when: "2019 – 2023", role: "Teaching Assistant",
-      body: "Lectured recitations, designed assignments and exams, mentored graduate and undergraduate project teams." },
+      body: "Lectured recitations, designed assignments and exams, and mentored graduate and undergraduate project teams." },
     { course: "Undergraduate CS curriculum", org: "Helwan University", when: "2014 – 2018", role: "Teaching Assistant",
       body: "C, C++, Java, Python, OOP, design patterns, data structures, compilers, software engineering, automated testing." }
   ],
@@ -381,7 +381,7 @@ const SITE = {
     "Artifact Reviewer, ACM SIGPLAN PLDI 2025",
     "Paper Reviewer, ACM Transactions on Software Engineering and Methodology (TOSEM), 2025",
     "Member, IEEE and ACM",
-    "Open science: every paper I publish ships with its datasets, benchmarks, or code, and the USENIX Security 2023 artifact was formally evaluated"
+    "Open science: public artifacts, datasets, and benchmarks accompany my papers, including the formally evaluated USENIX Security 2023 artifact"
   ],
 
   contact: {
