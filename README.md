@@ -9,8 +9,6 @@ assets/css/style.css                design tokens + layout
 assets/js/main.js                   rendering, filtering, theme, scroll-spy
 assets/img/profile.jpg              profile photo (falls back to a monogram)
 
-Tamer_Abdelaziz___Research_Statement.pdf ┐ kept at the site root because
-Tamer_Abdelaziz___Teaching_Statement.pdf ┘ these URLs are live and indexed
 google*.html                        Google Search Console verification; do not delete
 sitemap.xml                         search-engine sitemap
 .nojekyll                           serve files as-is, no Jekyll processing
