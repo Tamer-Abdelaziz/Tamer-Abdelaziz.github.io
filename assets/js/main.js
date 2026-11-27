@@ -46,7 +46,7 @@
   }
 
   /* ------------------------------------------------------- hero */
-  fill("#heroName", esc(P.name) + '<span class="suffix">, ' + esc(P.suffix) + "</span>");
+  fill("#heroName", esc(P.name) + '<span class="suffix"><span class="suffix-sep">, </span>' + esc(P.suffix) + "</span>");
   fill("#heroIdent",
     "<div>" + esc(P.role) + ", " + esc(P.affiliation) + "</div>" +
     "<div>" + esc(P.doctorate) + "</div>");

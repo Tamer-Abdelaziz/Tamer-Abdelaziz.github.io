@@ -127,7 +127,8 @@ img { max-width: 100%; display: block; }
 .hero-ident { margin: 0 0 22px; }
 .hero-ident div { font-size: 1.02rem; color: var(--muted); line-height: 1.5; }
 .hero-ident div:first-child { color: var(--text); font-weight: 550; }
-.hero h1 .suffix { color: var(--muted); font-size: .48em; letter-spacing: 0; }
+.hero h1 .suffix { color: var(--muted); font-size: .48em; letter-spacing: 0; white-space: nowrap; }
+@media (max-width: 560px) { .hero h1 .suffix { display: block; margin-top: .35em; } .hero h1 .suffix-sep { display: none; } }
 .hero-tagline {
   font-size: 1.14rem; line-height: 1.6; margin: 0 0 26px;
   max-width: 60ch; color: var(--text);

@@ -14,7 +14,7 @@ const SITE = {
     affiliation: "New York University Abu Dhabi",
     doctorate: "Ph.D., National University of Singapore",
     location: "Abu Dhabi, United Arab Emirates",
-    tagline: "I work on blockchain security. I screen smart contracts before they ship, judge transactions on the live network, and block attacks at the moment they execute.",
+    tagline: "I work on blockchain security. I screen smart contracts before they ship, judge transactions before they are mined, and make contracts refuse attacks at execution.",
     // Drop a square photo at assets/img/profile.jpg. Until then a monogram shows.
     photo: "assets/img/profile.jpg",
     bio: [
@@ -47,7 +47,7 @@ const SITE = {
   /* ---------------------------------------------------------------- */
 
   researchStatement: {
-  vision: "Blockchains hold software-controlled assets at a scale where a single malicious transaction can drain a protocol. No authority can reverse such a transaction. Detection alone is not enough. A detector can raise the alarm only after an attack is already underway, and private relays or faster execution can leave no time to respond. My research moves the security decision earlier. Before a sensitive call executes, a detector should judge the transaction, and the contract should run it only with that approval. Security then becomes a requirement for execution rather than a race to stop an attack. The same checkpoint can also enforce rules for tokenized real-world assets at the time of transfer. These rules include custody, transfer restrictions, and investor eligibility.",
+  vision: "Blockchains hold software-controlled assets at a scale where a single malicious transaction can drain a protocol. No authority can reverse such a transaction. Detection alone is not enough. A detector raises an alarm, and private relays or fast execution can leave no time to act on it. My research moves the security decision earlier. Before a sensitive call executes, a detector should judge the transaction, and the contract should run it only with that approval. Security then becomes a requirement for execution rather than a race to stop an attack. The same checkpoint can also enforce rules for tokenized real-world assets at the time of transfer. These rules include custody, transfer restrictions, and investor eligibility.",
 
   principles: [
   { h: "Prevention over Detection", b: "Instead of reporting an attack after it begins, I build systems that decide whether a transaction should execute at all." },
@@ -116,7 +116,7 @@ const SITE = {
       title: "TxBench: Verifying Public Incident Data to Benchmark Smart-Contract Attack Detectors",
       authors: ["Tamer Abdelaziz", "Karim Ali"],
       venue: "Under review, MSR 2027 (Data and Tool Showcase Track)", venueShort: "Under review",
-      note: "Detectors of attack transactions are evaluated on incident data that nobody has checked against execution. TxBench verifies each attack that public incident databases cite and pairs the verified attacks with legitimate transactions that perform the same operations. Researchers can then compare detectors on shared, verified ground truth.",
+      note: "Detectors of attack transactions are evaluated on the transactions that public incident databases cite, and the databases never check those citations against execution. TxBench performs that check and pairs the verified attacks with legitimate transactions that perform the same operations. Researchers can then compare detectors on shared, verified ground truth.",
       links: [
         { label: "arXiv",  href: "https://arxiv.org/abs/2611.04411" },
         { label: "Dataset", href: "https://doi.org/10.5281/zenodo.23758032" }
@@ -134,7 +134,7 @@ const SITE = {
       title: "Contract-Enforced Security Authorization: Stopping DeFi Exploits Before They Execute",
       authors: ["Tamer Abdelaziz", "Karim Ali"],
       venue: "Under review", venueShort: "Under review",
-      note: "Makes a smart contract enforce a detector's verdict. Every state-changing function of a protected contract requires an approval. An off-chain gatekeeper simulates a transaction, has a detector judge it, and signs an approval bound to exactly the calls it judged. The contract checks the approval on chain. Therefore, a refused attack reverts however the attacker sends it.",
+      note: "Makes a smart contract enforce a detector's verdict. By default, every state-changing function of a protected contract requires an approval. An off-chain gatekeeper simulates a transaction, has a detector judge it, and signs an approval bound to exactly the calls it judged. The contract checks the approval on chain. Therefore, a refused attack reverts however the attacker sends it.",
       links: [], bibtex:
 `@unpublished{abdelaziz2026saf,
   author = {Tamer Abdelaziz and Karim Ali},
@@ -162,7 +162,7 @@ const SITE = {
       title: "Where Do Smart Contract Security Analyzers Fall Short?",
       authors: ["Tamer Abdelaziz", "Salma Alsaghir", "Karim Ali"],
       venue: "23rd International Conference on Mining Software Repositories (MSR 2026)",
-      note: "A study of how far practitioners can rely on smart contract security analyzers. It runs widely used analyzers on real contracts with known ground truth and surveys practitioners about the tools they use. No analyzer is reliable across vulnerability classes, and false positives are the first reason practitioners ignore a warning.",
+      note: "A study of how far practitioners can rely on smart contract security analyzers. It runs widely used analyzers on real contracts with known ground truth and surveys practitioners about the tools they use. None of the tested analyzers is reliable across vulnerability classes, and false positives are the first reason practitioners ignore a warning.",
       venueShort: "MSR 2026",
       links: [
         { label: "ACM DL", href: "https://dl.acm.org/doi/10.1145/3793302.3793338" },
@@ -337,7 +337,7 @@ const SITE = {
       points: [
         "Research on the security of blockchain ecosystems, with Prof. Karim Ali.",
         "Built TxLens (IEEE ICBC 2026), TxSentinel, and SAF, and implement them in one service (public launch in preparation).",
-        "Mentor a Ph.D. student and three undergraduate research assistants; secondary advisor on three to four capstone and graduation projects each year."
+        "Mentor a Ph.D. student and three undergraduate research assistants; secondary advisor on three or four capstone and graduation projects each year."
       ] },
     { role: "Research Scholar", org: "School of Computing, National University of Singapore", where: "Singapore", when: "2019 – 2023",
       points: ["Thesis work on detecting vulnerabilities in deployed smart contracts, advised by Prof. Aquinas Hobor and Prof. Siau-Cheng Khoo. The core results appeared at USENIX Security 2023."] },
